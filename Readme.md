@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Короходкин](https://up.htmlacademy.ru/adaptive/15/user/628295).
-* Наставник: `Неизвестно`.
+* Наставник: `Лиза Позднякова`.
 
 ---
 
