@@ -35,6 +35,73 @@
         <h1 class="form-intro__title">Фотографии пользователей</h1>
       </section>
 
+      <section class="photos">
+        <h1 class="photos__title">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </h1>
+        <ul class="photos__list">
+          <li class="photos__item">
+            <img src="img/pan.png" class="photos__image photos__image--panorama">
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Анна</cite>
+              <span class="photos__time">(5 мин назад)</span>
+              <span class="photos__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляию в перископе,
+                задавайте свои вопросы?
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button">like</button>
+              <span class="like__counter">Нравится: 215</span>
+            </div>
+          </li>
+          <li class="photos__item">
+            <img src="img/pan.png" class="photos__image">
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Анна</cite>
+              <span class="photos__time">(5 мин назад)</span>
+              <span class="photos__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляию в перископе,
+                задавайте свои вопросы?
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button">like</button>
+              <span class="like__counter">Нравится: 215</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="upload">
+        <h1 class="upload__title">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </h1>
+        <img class="upload__image" src="img/yourPhoto.png" alt="Ваше фото">
+        <ul class="settings">
+          <li class="settings__item">
+            <label class="settings__label settings__label--cut settings__label--active">
+              Обрезать
+              <input type="range" name="cut" class="settings__range">
+            </label>
+          </li>
+          <li class="settings__item">
+            <label class="settings__label settings__label--fill">
+              Заливка
+              <input type="range" name="cut" class="settings__fill">
+            </label>
+          </li>
+          <li class="settings__item">
+            <label class="settings__label settings__label--contrast">
+              Контраст
+              <input type="range" name="cut" class="settings__contrast">
+            </label>
+          </li>
+        </ul>
+        <hr class="upload__separate">
+        <button type="submit" class="button-material">Запросить</button>
+        <button disabled type="reset" class="button-material">Отмена</button>
+      </section>
     </main>
 
   </body>
