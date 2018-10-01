@@ -78,30 +78,32 @@
         <h1 class="upload__title">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </h1>
-        <img class="upload__image" src="img/yourPhoto.png" alt="Ваше фото">
-        <ul class="settings">
-          <li class="settings__item">
-            <label class="settings__label settings__label--cut settings__label--active">
-              Обрезать
-              <input type="range" name="cut" class="settings__range">
-            </label>
-          </li>
-          <li class="settings__item">
-            <label class="settings__label settings__label--fill">
-              Заливка
-              <input type="range" name="cut" class="settings__fill">
-            </label>
-          </li>
-          <li class="settings__item">
-            <label class="settings__label settings__label--contrast">
-              Контраст
-              <input type="range" name="cut" class="settings__contrast">
-            </label>
-          </li>
-        </ul>
-        <hr class="upload__separate">
-        <button type="submit" class="button-material upload__button">Запросить</button>
-        <button disabled type="reset" class="button-material upload__button">Отмена</button>
+        <form class="upload__form">
+          <img class="upload__image" src="img/yourPhoto.png" alt="Ваше фото">
+          <ul class="settings">
+            <li class="settings__item">
+              <label class="settings__label settings__label--cut settings__label--active">
+                Обрезать
+                <input type="range" name="cut" class="settings__range">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label class="settings__label settings__label--fill">
+                Заливка
+                <input type="range" name="cut" class="settings__fill">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label class="settings__label settings__label--contrast">
+                Контраст
+                <input type="range" name="cut" class="settings__contrast">
+              </label>
+            </li>
+          </ul>
+          <hr class="upload__separate">
+          <button type="submit" class="button-material upload__button">Запросить</button>
+          <button disabled type="reset" class="button-material upload__button">Отмена</button>
+        </form>
       </section>
 
     </main>
