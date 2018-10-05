@@ -3,7 +3,7 @@
   margin: 48px 32px;
   line-height: 2.14;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   color: @blue;
   text-align: center;
 }
@@ -18,12 +18,13 @@
 }
 
 .upload__label-list {
+  .reset-list-style();
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 54px;
   margin: 0 0 32px;
-  list-style: none;
 }
 
 .upload__label {
@@ -33,9 +34,10 @@
 }
 
 .upload__range-list {
+  .reset-list-style();
+
   padding: 0 40px;
   margin: 0 0 32px;
-  list-style: none;
 }
 
 .upload__range-item {
