@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип" />
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип" width="75" height="22" />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-button">Закрыть меню</button>
+      <nav class="page-header__menu main-nav">
+        <button class="main-nav__toggle-button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -32,48 +34,51 @@
     <main class="page-main">
 
       <section class="intro">
-        <img class="intro__image" src="img/app.png" alt="Приложение" />
-        <div class="app">
-          <a href="https://up.htmlacademy.ru" class="app__download button">Скачать приложение</a>
-          <ul class="app__list">
-            <li class="app__item">
-              <a href="https://www.apple.com/ru/ios/app-store/" class="app__icon app__icon--apple">Apple</a>
-            </li>
-            <li class="app__item">
-              <a href="https://play.google.com/store/apps?hl=ru" class="app__icon app__icon--android">Android</a>
-            </li>
-            <li class="app__item">
-              <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" class="app__icon app__icon--windows">Windows</a>
-            </li>
-          </ul>
-          <small class="app__desc">Доступно для iPhone, iPad, Android, Windows Phone, Window 8</small>
-        </div>
+        <img class="intro__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение" />
+      </section>
+
+      <section class="app">
+        <a href="https://up.htmlacademy.ru" class="app__download-button button">Скачать приложение</a>
+        <ul class="app__list">
+          <li class="app__item">
+            <a href="https://www.apple.com/ru/ios/app-store/" class="app__icon app__icon--apple"></a>
+          </li>
+          <li class="app__item">
+            <a href="https://play.google.com/store/apps?hl=ru" class="app__icon app__icon--android"></a>
+          </li>
+          <li class="app__item">
+            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" class="app__icon app__icon--windows"></a>
+          </li>
+        </ul>
+        <small class="app__desc">Доступно для iPhone, iPad, Android, Windows Phone, Window 8</small>
       </section>
 
       <section class="features">
         <h1 class="features__title">Устали от серости мегаполиса</h1>
         <h1 class="features__title">Нам есть, что вам предложить!</h1>
-        <ul class="features-list">
-          <li class="features__item">
-            <h2 class="features__subtitle">Поднимает настроение</h2>
-            <p class="features__desc">
-              Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <h2 class="features__subtitle">Меняет мир вокруг</h2>
-            <p class="features__desc">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="features__item">
-            <h2 class="features__subtitle">Заводит новых друзей</h2>
-            <p class="features__desc">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <img class="features__image" src="img/app.png" alt="Приложение" />
+        <div class="features__list-wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <h2 class="features__subtitle">Поднимает настроение</h2>
+              <p class="features__desc">
+                Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features__item">
+              <h2 class="features__subtitle">Меняет мир вокруг</h2>
+              <p class="features__desc">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features__item">
+              <h2 class="features__subtitle">Заводит новых друзей</h2>
+              <p class="features__desc">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <img class="features__image" src="img/iphone-screen-mobile@1x.png" alt="Приложение" />
+        </div>
       </section>
 
       <section class="comments">
@@ -90,9 +95,9 @@
             </li>
           </ul>
           <div class="slider__toggles">
-            <button class="slider__toggle slider__toggle--active">1</button>
-            <button class="slider__toggle">2</button>
-            <button class="slider__toggle">3</button>
+            <button class="slider__toggle slider__toggle--active"></button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle"></button>
           </div>
         </div>
       </section>
@@ -118,54 +123,69 @@
 
             <tr>
               <td class="prices__feature">
-                Розовый фильтр
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Розовый фильтр
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Розовый фильтр
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Розовый фильтр
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Розовый фильтр
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Розовый фильтр
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
             </tr>
-
             <tr>
               <td class="prices__feature">
-                Смайлики
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Смайлики
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Смайлики
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Смайлики
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Смайлики
-                <span class="prices__status prices__status--no"></span>
+                <div class="prices__feature-wrapper">
+                  Смайлики
+                  <span class="prices__status prices__status--no"></span>
+                </div>
               </td>
             </tr>
-
             <tr>
               <td class="prices__feature">
-                Комментарии
-                <span class="prices__status prices__status--yes"></span>
+                <div class="prices__feature-wrapper">
+                  Комментарии
+                  <span class="prices__status prices__status--yes"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Комментарии
-                <span class="prices__status prices__status--no"></span>
+                <div class="prices__feature-wrapper">
+                  Комментарии
+                  <span class="prices__status prices__status--no"></span>
+                </div>
               </td>
               <td class="prices__feature">
-                Комментарии
-                <span class="prices__status prices__status--no"></span>
+                <div class="prices__feature-wrapper">
+                  Комментарии
+                  <span class="prices__status prices__status--no"></span>
+                </div>
               </td>
             </tr>
-
           </table>
-          <div class="prices__toggles">
-            <button class="prices__toggle">1</button>
-            <button class="prices__toggle prices__toggle--active">2</button>
-            <button class="prices__toggle">3</button>
+          <div class="slider__toggles prices__toggles">
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle slider__toggle--active"></button>
+            <button class="slider__toggle"></button>
           </div>
         </div>
       </section>
@@ -176,18 +196,17 @@
       <h1 class="home-footer__title">Остались воросы? Свяжитесь с нами?</h1>
       <address class="home-footer__contacts">
         <h2 class="home-footer__subtitle">Звоните:</h2>
-        <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+        <a class="home-footer__link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
       </address>
       <address class="home-footer__contacts">
         <h2 class="home-footer__subtitle">Пишите:</h2>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="home-footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </address>
       <address class="home-footer__contacts">
         <h2 class="home-footer__subtitle">Приезжайте в гости:</h2>
         ул. Большая Конюшенная, 19/8
       </address>
       <div class="home-footer__map map">
-        Карта
       </div>
     </footer>
   </body>

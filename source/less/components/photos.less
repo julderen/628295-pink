@@ -1,0 +1,67 @@
+.photos__title {
+  display: block;
+  margin: 56px 38px;
+  line-height: 2.14;
+  color: @blue;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.photos__list {
+  .reset-list-style();
+}
+
+.photos__item {
+  background: @gray--light;
+  margin: 0 20px 20px;
+}
+
+.photos__image--panorama {
+  margin: 0 -20px;
+}
+
+.photos__link--panorama {
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    width: 140px;
+    height: 36px;
+    background: @red;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 36px;
+  }
+}
+
+.photos__link {
+  position: relative;
+  display: block;
+  line-height: 0;
+}
+
+.photos__desc {
+  margin: 0;
+  padding: 25px 20px 20px;
+  color: @blue;
+}
+
+.photos__author {
+  display: block;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.photos__time {
+  font-weight: 300;
+}
+
+.photos__like {
+  padding: 0 20px 26px;
+}

@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип" />
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип" width="75" height="22" />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-button">Закрыть меню</button>
+      <nav class="page-header__menu main-nav">
+        <button class="main-nav__toggle-button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -31,48 +33,105 @@
 
     <main class="photo-main">
 
-      <section class="page-intro">
-        <img src="./img/form" alt="photo" class="page-intro__image">
-        <h1 class="page-intro__title">Фотографии пользователей</h1>
+      <section class="intro">
+        <h1 class="intro__title">Фотографии пользователей</h1>
       </section>
 
       <section class="photos">
         <h1 class="photos__title">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
         </h1>
         <ul class="photos__list">
           <li class="photos__item">
-            <a class="photos__link">
-              <img src="img/pan.png" class="photos__image photos__image--panorama">
+            <a class="photos__link photos__link--panorama">
+              <img src="img/panorama-mobile@1x.jpg" class="photos__image photos__image--panorama">
             </a>
             <blockquote class="photos__desc">
-              <cite class="photos__author">Анна</cite>
-              <span class="photos__time">(5 мин назад)</span>
+              <cite class="photos__author">Анна<span class="photos__time">(5 мин назад)</span></cite>
               <span class="photos__text">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляию в перископе,
                 задавайте свои вопросы?
               </span>
             </blockquote>
             <div class="photos__like like">
-              <button class="like__button">like</button>
+              <button class="like__button"></button>
               <span class="like__counter">Нравится: 215</span>
             </div>
           </li>
           <li class="photos__item">
             <a class="photos__link">
-              <img src="img/pan.png" class="photos__image">
+              <img src="img/photo-car-mobile@1x.jpg" class="photos__image">
             </a>
             <blockquote class="photos__desc">
-              <cite class="photos__author">Анна</cite>
-              <span class="photos__time">(5 мин назад)</span>
+              <cite class="photos__author">Левон <span class="photos__time">(5 часов назад)</span></cite>
               <span class="photos__text">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляию в перископе,
-                задавайте свои вопросы?
+                Вчера он на луну летал, сегодня в руки к нам попал.
               </span>
             </blockquote>
             <div class="photos__like like">
-              <button class="like__button">like</button>
+              <button class="like__button"></button>
+              <span class="like__counter">Нравится: 666</span>
+            </div>
+          </li>
+          <li class="photos__item">
+            <a class="photos__link">
+              <img src="img/photo-window-mobile@1x.jpg" class="photos__image">
+            </a>
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Борис <span class="photos__time">(20 часов назад)</span></cite>
+              <span class="photos__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button"></button>
               <span class="like__counter">Нравится: 215</span>
+            </div>
+          </li>
+          <li class="photos__item">
+            <a class="photos__link">
+              <img src="img/photo-fair-mobile@1x.jpg" class="photos__image">
+            </a>
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Сергей <span class="photos__time">(25 часов назад)</span></cite>
+              <span class="photos__text">
+                Самая кубанская в мире!
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button"></button>
+              <span class="like__counter">Нравится: 4</span>
+            </div>
+          </li>
+          <li class="photos__item">
+            <a class="photos__link">
+              <img src="img/photo-pov-mobile@1x.jpg" class="photos__image">
+            </a>
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Максим <span class="photos__time">(40 часов назад)</span></cite>
+              <span class="photos__text">
+                Где снег-то?
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button"></button>
+              <span class="like__counter">Нравится: 150</span>
+            </div>
+          </li>
+          <li class="photos__item">
+            <a class="photos__link">
+              <img src="img/photo-wing-mobile@1x.jpg" class="photos__image">
+            </a>
+            <blockquote class="photos__desc">
+              <cite class="photos__author">Надежда <span class="photos__time">(45 часов назад)</span></cite>
+              <span class="photos__text">
+                Всем GM и взаимные лайки!
+              </span>
+            </blockquote>
+            <div class="photos__like like">
+              <button class="like__button"></button>
+              <span class="like__counter">Нравится: 2560</span>
             </div>
           </li>
         </ul>
@@ -83,30 +142,40 @@
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </h1>
         <form class="upload__form">
-          <img class="upload__image" src="img/yourPhoto.png" alt="Ваше фото">
-          <ul class="settings">
-            <li class="settings__item">
-              <label class="settings__label settings__label--cut settings__label--active">
-                Обрезать
-                <input type="range" name="cut" class="settings__range">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+          <ul class="upload__label-list">
+            <li class="upload__label-item">
+              <label for="input__range__cut" class="upload__label upload__label--active">
+                <img width="44" height="44" src="./img/icon-editor-crop.svg">
               </label>
             </li>
-            <li class="settings__item">
-              <label class="settings__label settings__label--fill">
-                Заливка
-                <input type="range" name="cut" class="settings__fill">
+            <li class="upload__label-item">
+              <label for="input__range__fill" class="upload__label upload__label--fill">
+                <img width="44" height="44" src="./img/icon-editor-fill.svg">
               </label>
             </li>
-            <li class="settings__item">
-              <label class="settings__label settings__label--contrast">
-                Контраст
-                <input type="range" name="cut" class="settings__contrast">
+            <li class="upload__label-item">
+              <label for="input__range__contrast" class="upload__label upload__label--contrast">
+                <img width="44" height="44" src="./img/icon-editor-contrast.svg">
               </label>
             </li>
           </ul>
+          <ul class="upload__range-list">
+            <li class="upload__range-item upload__range-item--active">
+              <input id="input__range__cut" type="range" name="cut" class="input__range" min="0" max="10" value="5">
+            </li>
+            <li class="upload__range-item">
+              <input id="input__range__fill" type="range" name="fill" class="input__range">
+            </li>
+            <li class="upload__range-item">
+              <input id="input__range__contrast" type="range" name="contrast" class="input__range">
+            </li>
+          </ul>
           <hr class="upload__separate">
-          <button type="submit" class="button-material upload__button">Запросить</button>
-          <button disabled type="reset" class="button-material upload__button">Отмена</button>
+          <div class="upload__button-wrapper">
+            <button type="submit" class="button upload__button  button--red upload__button">Запросить</button>
+            <button disabled type="reset" class="button button--red button--disabled upload__button">Отмена</button>
+          </div>
         </form>
       </section>
 
@@ -114,22 +183,22 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип" />
+        <img class="page-header__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип" />
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
-          <a class="socials__icon socials__icon--twitter" href="https://twitter.com/?lang=ru">twitter</a>
+          <a class="socials__icon socials__icon--twitter" href="https://twitter.com/?lang=ru"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__icon socials__icon--facebook" href="https://www.facebook.com">facebook</a>
+          <a class="socials__icon socials__icon--facebook" href="https://www.facebook.com"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__icon socials__icon--youtube" href="https://www.youtube.com/?hl=ru&gl=RU">youtube</a>
+          <a class="socials__icon socials__icon--youtube" href="https://www.youtube.com/?hl=ru&gl=RU"></a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru">
-          Разработано
           <img class="copyright__logo" src="img/htmlacademy.svg" alt="html academy" width="34" height="34">
         </a>
       </div>
