@@ -1,8 +1,13 @@
+@mobile-header-height: 66px;
+@desktop-header-height: 110px;
+
 .page-header {
-  position: fixed;
   width: 100%;
+  min-width: 320px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   z-index: 2;
   background-color: fade(@blue--dark, 90%);
 }
@@ -11,8 +16,102 @@
   display: inline-block;
   margin: 22px 20px;
   cursor: pointer;
+  line-height: 0;
+}
+
+.page-header__logo-wrapper {
+  height: @mobile-header-height;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  box-shadow: 0 1px 0 0 #000000;
+  width: 100%;
 }
 
 .page-header__menu {
-  margin: 21px 20px;
+  width: 100%;
+}
+
+.page-header__toggle-button {
+  .set-icon-background-style();
+
+  width: 50px;
+  height: 24px;
+  flex-shrink: 0;
+  margin: 22px 20px;
+  border: 0;
+  background-color: initial;
+  background-image: url("../../img/icon-menu-cross.svg");
+  cursor: pointer;
+  box-shadow: 0 1px 0 0 var(--black), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+.page-header__list {
+  .reset-list-style();
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page-header__item {
+  height: @mobile-header-height;
+  margin-bottom: 1px;
+  line-height: @mobile-header-height;
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.page-header__link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    height: @desktop-header-height;
+    background-color: fade(@blue--dark, 60%);
+    padding: 0 130px;
+  }
+
+  .page-header__logo-wrapper {
+    width: auto;
+    box-shadow: none;
+  }
+
+  .page-header__logo {
+    margin-right: 170px;
+  }
+
+  .page-header__toggle-button {
+    display: none;
+  }
+
+  .page-header__menu {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .page-header__list {
+    width: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .page-header__item {
+    box-shadow: none;
+    height: @desktop-header-height;
+    line-height: @desktop-header-height;
+  }
 }
