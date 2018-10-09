@@ -1,4 +1,6 @@
 .intro {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
   width: 100%;
   margin: auto;
@@ -8,10 +10,12 @@
 }
 
 .intro__title {
+  display: block;
+  width: 250px;
   font-size: 24px;
   color: white;
   font-weight: 300;
-  padding: 35px 46px 87px;
+  margin: 35px auto 87px;
   line-height: 1.2;
   text-align: center;
 }
@@ -39,8 +43,8 @@
 
 @media (min-width: @table-width) {
   .intro {
-    display: flex;
     align-items: flex-end;
+    flex-direction: row;
     justify-content: center;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
   }
@@ -55,6 +59,12 @@
     width: 300px;
     order: -1;
     flex-shrink: 0;
+  }
+
+  .intro__title {
+    width: 480px;
+    margin: 80px auto 150px;
+    font-size: 50px;
   }
 }
 
@@ -71,5 +81,11 @@
     width: 1050px;
     flex-shrink: 0;
     margin-left: -350px;
+  }
+
+  .intro__title {
+    width: 750px;
+    margin: 74px auto 112px;
+    font-size: 50px;
   }
 }
