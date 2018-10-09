@@ -73,12 +73,17 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    position: fixed;
     flex-direction: row;
     align-items: center;
     height: @desktop-header-height;
-    background-color: fade(@blue--dark, 60%);
+    background-color: fade(black, 30%);
     padding: 0 130px;
+    overflow: auto;
+  }
+
+  .page-header__link {
+    display: block;
+    height: 100%;
   }
 
   .page-header__logo-wrapper {
