@@ -1,8 +1,8 @@
 .socials {
   .reset-list-style();
+
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 150px);
   margin: 0 auto;
 }
 
@@ -36,4 +36,11 @@
   width: 15px;
   height: 13px;
   background-image: url("../../img/icon-youtube.svg");
+}
+
+@media (min-width: @table-width) {
+  .socials__item {
+    width: 46px;
+    height: 46px;
+  }
 }
