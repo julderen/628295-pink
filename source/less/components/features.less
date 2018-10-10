@@ -1,13 +1,15 @@
 .features {
+  min-width: 320px;
   padding-top: 46px;
 }
 
 .features__title {
-  margin: 0 58px 20px;
+  margin: 0 auto 20px;
+  width: 210px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  line-height: normal;
+  line-height: 1.2;
   color: @blue;
 }
 
@@ -18,9 +20,14 @@
 .features__list {
   .reset-list-style();
 
-  padding: 20px 32px;
+  padding: 20px 32px 0;
   margin: 0;
   text-align: center;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .features__subtitle {
@@ -32,7 +39,96 @@
   margin-bottom: 20px;
 }
 
+.features__image-wrapper {
+  display: none;
+  height: 280px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+
+.features__image-wrapper--main {
+  display: flex;
+  order: 2;
+}
+
 .features__image {
-  display: block;
-  margin: auto;
+  height: 100%;
+}
+
+
+@media (min-width: @table-width) and (max-width: @desktop-width - 1) {
+  .features__title {
+    width: 590px;
+    font-size: 40px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features__image-wrapper {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 270px;
+    height: 490px;
+  }
+
+  .features__list {
+    position: relative;
+    padding: 0 30px 0 330px;
+    width: 300px;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .features__title {
+    width: 731px;
+    font-size: 50px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__image-wrapper {
+    display: flex;
+    order: 0;
+    margin-bottom: 60px;
+  }
+
+  .features__list {
+    display: flex;
+    padding: 0 0 70px;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .features__item {
+    padding: 0 45px;
+    align-items: center;
+  }
+
+  .features__subtitle {
+    margin: 0 0 30px;
+  }
+
+  .features__desc {
+    width: 240px;
+    margin: 0;
+  }
+
+  .features__image {
+    height: 100%;
+  }
 }
