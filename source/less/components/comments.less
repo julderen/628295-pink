@@ -1,4 +1,5 @@
 .comments {
+  min-width: 320px;
   margin: 50px 0 20px;
 }
 
@@ -7,18 +8,78 @@
 }
 
 .comments__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 22px;
   margin: 0;
   text-align: center;
 }
 
 .comments__author {
+  margin: 0 0 25px;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 25px;
+  font-style: normal;
 }
 
 .comments__text {
   color: @blue;
   line-height: 2.14;
+
+  margin: 0 0 40px;
+}
+
+.comments__author-desc {
+  display: none;
+  line-height: 2.14;
+  font-size: 14px;
+  color: @blue--dark;
+  font-weight: 300;
+}
+
+.comments__quote {
+  .set-icon-background-style();
+
+  display: none;
+  width: 80px;
+  height: 64px;
+  margin-bottom: 60px;
+  background-image: url("../../img/icon-quotes.svg");
+}
+
+@media (min-width: @table-width) {
+  .comments__author {
+    order: 1;
+    margin-bottom: 44px;
+    font-size: 20px;
+  }
+
+  .comments__text {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 44px;
+  }
+
+  .comments__author-desc {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments {
+    margin: 72px 130px 30px;
+  }
+
+  .comments__list {
+    padding: 0 105px;
+  }
+
+  .comments__item {
+    width: 685px;
+  }
+
+  .comments__quote {
+    display: block;
+  }
 }

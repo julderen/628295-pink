@@ -19,3 +19,27 @@
   background: white;
   border: solid 3px @blue;
 }
+
+.slider__toggle-arrow {
+  display: none;
+  height: 41px;
+  width: 22px;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .slider__toggles {
+    display: none;
+  }
+
+  .slider__toggle-arrow {
+    display: block;
+  }
+}
