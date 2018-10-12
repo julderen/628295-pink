@@ -41,104 +41,110 @@
 
       <section class="form">
         <h1 class="form__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </h1>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form__person-info">
-            <label class="form__label">
+            <label class="label label--inline">
               Фамилия:
-              <input required class="form__input" type="text" name="surname" placeholder="Укажите фамилию *">
+              <input required class="input label__input--inline" type="text" name="surname" placeholder="Укажите фамилию *">
             </label>
-            <label class="form__label">
+            <label class="label label--inline">
               Имя:
-              <input required class="form__input" type="text" name="name" placeholder="Введите вашу имя *">
+              <input required class="input label__input--inline" type="text" name="name" placeholder="Введите вашу имя *">
             </label>
-            <label class="form__label">
+            <label class="label label--inline">
               Отчество:
-              <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              <input class="input label__input--inline" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
           </div>
 
-          <fieldset class="form__set">
-            <legend class="form__legend">
+          <fieldset class="form__set form__set--achievements">
+            <span class="form__legend">
               Ваши безбашенные достижения в путешествии
-            </legend>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox"form_="checkbox" name="sharkPhoto">
-              Сделал селфи с акулой
-            </label>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox" type="checkbox" name="burn">
-              Обгорел на пляже
-            </label>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox" type="checkbox" name="seeChuckNorris">
-              Видел Чака Норриса
-            </label>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox" type="checkbox" name="buySouvenirs">
-              Накупил сувениров
-            </label>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox" type="checkbox" name="holdTower">
-              Удержал башню
-            </label>
-            <label class="form__label form__label--toggle form__label--checkbox">
-              <input class="form__checkbox" type="checkbox" name="smashHotel">
-              Разгромил отель
-            </label>
+            </span>
+            <div class="form__achievements-wrapper">
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox"  name="sharkPhoto">
+                Сделал селфи с акулой
+              </label>
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox" name="burn">
+                Обгорел на пляже
+              </label>
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox" name="seeChuckNorris">
+                Видел Чака Норриса
+              </label>
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox" name="buySouvenirs">
+                Накупил сувениров
+              </label>
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox" name="holdTower">
+                Удержал башню
+              </label>
+              <label class="label label--toggle label--checkbox">
+                <input class="label__checkbox" type="checkbox" name="smashHotel">
+                Разгромил отель
+              </label>
+            </div>
           </fieldset>
 
-          <fieldset class="form__set form__set--table-up">
-            <legend class="form__legend">Контактная информация</legend>
-            <label class="form__label">
-              Номер телефона
-              <input class="form__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form__label">
-              Адрес почты
-              <input class="form__input" required type="email" name="email" placeholder="Введите почту *">
-            </label>
+          <fieldset class="form__set form__set--contacts form__set--no-display-tablet-down">
+            <span class="form__legend form__legend--no-display-tablet-down">Контактная информация</span>
+            <div class="form__contacts-wrapper">
+              <label class="label label--reverse label__input-icon label__input-icon--phone">
+                Номер телефона
+                <input class="input label__input--reverse input__icon" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="label label--reverse label__input-icon label__input-icon--email">
+                Адрес почты
+                <input class="input label__input--reverse" required type="email" name="email" placeholder="Введите почту *">
+              </label>
+            </div>
           </fieldset>
 
 
-          <fieldset class="form__set">
-            <legend class="form__legend">
+          <fieldset class="form__set form__set--app">
+            <span class="form__legend">
               С каким приложением путешествовали?
-            </legend>
-            <label class="form__label form__label--toggle form__label--radio">
-              <input class="form__radio" type="radio" name="ios" checked>
+            </span>
+            <label class="label label--toggle label--radio">
+              <input class="label__radio" type="radio" name="ios" checked>
               Pink для iOS
             </label>
-            <label class="form__label form__label--toggle form__label--radio">
-              <input class="form__radio" type="radio" name="android">
+            <label class="label label--toggle label--radio">
+              <input class="label__radio" type="radio" name="android">
               Pink на Android
             </label>
-            <label class="form__label form__label--toggle form__label--radio">
-              <input class="form__radio" type="radio" name="windows">
+            <label class="label label--toggle label--radio">
+              <input class="label__radio" type="radio" name="windows">
               Windows Phone
             </label>
           </fieldset>
 
-          <fieldset class="form__set form__set--table-up">
-            <legend class="form__legend">Опиши свои эмоции</legend>
-            <label class="form__label form__label--text-area">
+          <fieldset class="form__set form__set--emotions form__set--no-display-tablet-down">
+            <span class="form__legend form__legend--no-display-tablet-down">Опиши свои эмоции</span>
+            <label for="emotions" class="label label--text-area form__label-text-area">
               Опиши свои эмоции
-              <textarea class="form__text-area" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
             </label>
+            <textarea class="text-area form__text-area" id="emotions" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
-          <button class="button form__button button--submit" type="submit">
-            Отправить форму
-          </button>
+          <div class="form__button-wrapper">
+            <button class="button form__button button--submit" type="submit">
+              Отправить форму
+            </button>
+            <small class="form__notice">
+              <span>*</span> — обязательные поля
+            </small>
+          </div>
         </form>
 
-        <small class="form__notice">
-          <span>*</span> — обязательные поля
-        </small>
       </section>
 
-      <section class="notification notification--open">
+      <section class="notification">
         <h1 class="notification__title">Ваша заявка отправлена</h1>
         <span class="notification__text">
           Спасибо за ваше участие, ваша заявка уже поступила к нам. В болижайшее время мы рассмотрим ее и оповестим вас.
