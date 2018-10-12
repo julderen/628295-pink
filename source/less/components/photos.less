@@ -10,15 +10,28 @@
 
 .photos__list {
   .reset-list-style();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
 }
 
 .photos__item {
   background: @gray--light;
+  width: 280px;
   margin: 0 20px 20px;
 }
 
+.photos__image {
+  width: 100%;
+}
+
 .photos__image--panorama {
-  margin: 0 -20px;
+  margin: 0 calc(-50vw + 140px);
+  width: 100vw;
 }
 
 .photos__link--panorama {

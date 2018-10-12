@@ -14,3 +14,22 @@
     padding-right: 80px;
   }
 }
+
+.input__range {
+  width: 100%;
+
+  &::track {
+    width: 100%;
+    background: black;
+    height: 2px;
+  }
+
+  &::thumb {
+    margin-top: -6px;
+    border: solid 2px @red;
+    background-color: @gray--light;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+  }
+}

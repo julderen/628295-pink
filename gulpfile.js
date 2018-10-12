@@ -5,6 +5,7 @@ var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var postcssInputStyle = require("postcss-input-style");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -12,6 +13,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
+      postcssInputStyle(),
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
