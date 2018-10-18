@@ -81,6 +81,11 @@
 }
 
 @media (min-width: @table-width) {
+  .photos {
+    width: 620px;
+    margin: auto;
+  }
+
   .photos__title {
     margin: 100px 110px 80px;
     font-size: 18px;
@@ -92,16 +97,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: space-between;
   }
 
   .photos__item {
     width: 300px;
-    margin: 0 10px 20px;
+    margin: 0 0 20px;
   }
 
   .photos__item--panorama {
-    width: auto;
-    margin: 0 20px 20px;
+    width: 100%;
 
     .photos__desc {
       display: flex;
@@ -116,7 +121,7 @@
   }
 
   .photos__image--panorama {
-    margin: 0 -20px;
+    margin: 0 calc(-50vw + 310px);
   }
 
   .photos__link--panorama {
@@ -135,16 +140,21 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photos {
+    width: 940px;
+  }
+
   .photos__title {
     width: 568px;
     margin: 100px auto 92px;
   }
 
   .photos__item--panorama {
-    margin: 0 130px 50px;
+    width: 940px;
+    margin: 0 auto 50px;
   }
 
   .photos__image--panorama {
-    margin: 0 -130px;
+    margin: 0 calc(-50vw + 470px);
   }
 }
