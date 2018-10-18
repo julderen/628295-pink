@@ -75,29 +75,37 @@
     margin-left: 22px;
   }
 
-  .label__input-icon {
+  .label--input-icon-email {
     position: relative;
 
     &::after {
+      .set-icon-background-style();
+
       content: "";
       position: absolute;
       right: 0;
       top: 0;
       width: 60px;
       height: 60px;
-      background: @gray;
+      background-color: @gray;
+      background-image: url("../../img/icon-mail.svg");
     }
   }
 
-  .label__input-icon--email::after {
-    background-image: url("../../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  .label--input-icon-phone {
+    position: relative;
 
-  .label__input-icon--phone::after {
-    background-image: url("../../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    &::after {
+      .set-icon-background-style();
+
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-color: @gray;
+      background-image: url("../../img/icon-phone.svg");
+    }
   }
 }
