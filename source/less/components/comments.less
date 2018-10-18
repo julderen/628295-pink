@@ -38,16 +38,6 @@
   font-weight: 300;
 }
 
-.comments__quote {
-  .set-icon-background-style();
-
-  display: none;
-  width: 80px;
-  height: 64px;
-  margin-bottom: 60px;
-  background-image: url("../../img/icon-quotes.svg");
-}
-
 @media (min-width: @table-width) {
   .comments__author {
     order: 1;
@@ -77,9 +67,14 @@
 
   .comments__item {
     width: 685px;
-  }
 
-  .comments__quote {
-    display: block;
+    &::before {
+      content: url("../../img/icon-quotes.svg");
+      .set-icon-background-style();
+
+      width: 80px;
+      height: 64px;
+      margin-bottom: 60px;
+    }
   }
 }
