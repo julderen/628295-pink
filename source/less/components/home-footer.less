@@ -54,6 +54,8 @@
   }
 
   .home-footer__contacts-wrapper {
+    width: 620px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -74,9 +76,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .home-footer__contacts-wrapper {
+    width: 940px;
+    margin: 0 auto 60px;
+    justify-content: space-between;
+  }
+
   .home-footer__contacts {
     min-width: auto;
-    margin: 0 60px 60px;
+    margin: 0;
   }
 
   .home-footer__title {

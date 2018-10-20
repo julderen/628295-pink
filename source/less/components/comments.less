@@ -1,6 +1,6 @@
 .comments {
-  min-width: 320px;
-  margin: 50px 0 20px;
+  width: 280px;
+  margin: 50px auto 20px;
 }
 
 .comments__list {
@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 22px;
   margin: 0;
   text-align: center;
 }
@@ -39,6 +38,10 @@
 }
 
 @media (min-width: @table-width) {
+  .comments {
+    width: 620px;
+  }
+
   .comments__author {
     order: 1;
     margin-bottom: 44px;
@@ -58,7 +61,8 @@
 
 @media (min-width: @desktop-width) {
   .comments {
-    margin: 72px 130px 30px;
+    width: 940px;
+    margin: 72px auto 30px;
   }
 
   .comments__list {
