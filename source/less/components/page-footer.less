@@ -2,7 +2,6 @@
   padding: 40px 0;
   display: flex;
   flex-direction: column;
-  height: 204px;
   justify-content: space-between;
   align-items: center;
 }
@@ -10,22 +9,26 @@
 .page-footer__logo {
   display: block;
   cursor: pointer;
+  margin-bottom: 34px;
 }
 
 .page-footer__socials {
   width: 180px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: @table-width) {
   .page-footer {
-    height: auto;
     flex-direction: row;
-    padding: 36px 20px 50px;
+    width: 620px;
+    padding: 36px 0 50px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding: 70px 130px 90px;
+    width: 940px;
+    padding: 70px 0 90px;
   }
 }
