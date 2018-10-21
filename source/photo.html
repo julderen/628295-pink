@@ -159,30 +159,32 @@
           Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
         </h1>
         <form class="upload__form">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
-          <ul class="upload__label-list">
-            <li class="upload__label-item upload__label-item--active">
-              <label class="upload__label">
-                <img class="upload__icon" width="44" height="44" src="./img/icon-editor-crop.svg">
-                <input type="range" name="cut" class="upload__input input__range" min="0" max="10" value="5">
-              </label>
-            </li>
-            <li class="upload__label-item">
-              <label class="upload__label upload__label--fill">
-                <img class="upload__icon" width="44" height="44" src="./img/icon-editor-fill.svg">
-                <input type="range" name="fill" class="upload__input input__range">
-              </label>
-            </li>
-            <li class="upload__label-item">
-              <label class="upload__label upload__label--contrast">
-                <img class="upload__icon" width="44" height="44" src="./img/icon-editor-contrast.svg">
-                <input type="range" name="contrast" class="upload__input input__range">
-              </label>
-            </li>
-          </ul>
-          <div class="upload__button-wrapper">
-            <button type="submit" class="button upload__button  button--red upload__button">Запросить</button>
-            <button disabled type="reset" class="button button--red button--disabled upload__button">Отмена</button>
+          <div class="upload__form-wrapper">
+            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            <ul class="upload__label-list">
+              <li class="upload__label-item upload__label-item--active">
+                <label class="upload__label">
+                  <img class="upload__icon" width="44" height="44" src="./img/icon-editor-crop.svg">
+                  <input type="range" name="cut" class="upload__input input__range" min="0" max="10" value="5">
+                </label>
+              </li>
+              <li class="upload__label-item">
+                <label class="upload__label upload__label--fill">
+                  <img class="upload__icon" width="44" height="44" src="./img/icon-editor-fill.svg">
+                  <input type="range" name="fill" class="upload__input input__range">
+                </label>
+              </li>
+              <li class="upload__label-item">
+                <label class="upload__label upload__label--contrast">
+                  <img class="upload__icon" width="44" height="44" src="./img/icon-editor-contrast.svg">
+                  <input type="range" name="contrast" class="upload__input input__range">
+                </label>
+              </li>
+            </ul>
+            <div class="upload__button-wrapper">
+              <button type="submit" class="button upload__button  button--red upload__button">Запросить</button>
+              <button disabled type="reset" class="button button--red button--disabled upload__button">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
