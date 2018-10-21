@@ -108,11 +108,15 @@
 
 @media (min-width: @table-width) {
   .page-header__logo-wrapper {
-    height: 110px;
+    height: @desktop-header-height;
   }
 
   .page-header__logo {
     width: 150px;
+  }
+
+  .page-header__menu {
+    top: @desktop-header-height;
   }
 }
 
@@ -134,6 +138,7 @@
 
   .page-header__logo-wrapper {
     box-shadow: none;
+    background-color: inherit;
     width: 150px;
     padding: 0;
     margin-right: 170px;
@@ -148,10 +153,15 @@
   }
 
   .page-header__menu {
+    display: block;
+    position: relative;
+    top: 0;
     width: 620px;
+    background-color: inherit;
   }
 
   .page-header__list {
+    display: flex;
     width: inherit;
     flex-direction: row;
     align-content: center;
