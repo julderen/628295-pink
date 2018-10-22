@@ -11,7 +11,6 @@
 
 .intro__title {
   display: block;
-  width: 250px;
   font-size: 24px;
   color: white;
   font-weight: 300;
@@ -31,7 +30,8 @@
 }
 
 .intro__app {
-  width: 100%;
+  width: 100vw;
+  transform: translateX(calc(-50% + 140px));
 }
 
 @media (min-width: @mobile-width) {
@@ -49,13 +49,15 @@
   }
 
   .intro__image-wrapper {
+    position: absolute;
+    bottom: 0;
     width: 660px;
     flex-shrink: 0;
-    margin: 0 0 0 -350px;
   }
 
   .intro__app {
     width: 300px;
+    transform: none;
     order: -1;
     flex-shrink: 0;
   }
@@ -79,7 +81,6 @@
   .intro__image-wrapper {
     width: 1050px;
     flex-shrink: 0;
-    margin-left: -410px;
   }
 
   .intro__title {
