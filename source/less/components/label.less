@@ -1,3 +1,31 @@
+.draw-icon-ok() {
+  background-size: contain;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 8px;
+  transform: rotate(135deg);
+  background-color: inherit;
+  border: solid 2px @red;
+  border-left: none;
+  border-bottom: none;
+}
+
+.draw-icon-circle() {
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: @red;
+  border-radius: 50%;
+}
+
+
 .label {
   display: block;
   color: @red;
@@ -17,8 +45,9 @@
   &::before {
     content: "";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 38px;
+    box-sizing: border-box;
     background-color: white;
     border: solid 2px @gray;
     margin-right: 34px;
@@ -33,35 +62,17 @@
   }
 
   &:active::after {
+    .draw-icon-ok();
+
     content: "";
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    display: block;
-    width: 16px;
-    height: 8px;
-    transform: rotate(135deg);
-    background-color: inherit;
-    border: solid 2px @red;
-    border-left: none;
-    border-bottom: none;
   }
 }
 
 input[type="checkbox"]:checked + .label--checkbox {
   &::after {
+    .draw-icon-ok();
+
     content: "";
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    display: block;
-    width: 16px;
-    height: 8px;
-    transform: rotate(135deg);
-    background-color: inherit;
-    border: solid 2px @red;
-    border-left: none;
-    border-bottom: none;
   }
 
   &:active::after {
@@ -71,19 +82,43 @@ input[type="checkbox"]:checked + .label--checkbox {
 
 .label--radio {
   display: flex;
+  position: relative;
   text-transform: none;
   font-size: 18px;
   color: @blue;
+  cursor: pointer;
 
   &::before {
     content: "";
     display: block;
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     background-color: white;
     border: solid 2px @gray;
     border-radius: 50%;
     margin-right: 34px;
+  }
+
+  &:hover::before {
+    border-color: black;
+  }
+
+  &:active::before {
+    border-color: @red;
+  }
+
+  &:active::after {
+    .draw-icon-circle();
+
+    content: "";
+  }
+}
+
+input[type="radio"]:checked + .label--radio {
+  &::after {
+    .draw-icon-circle();
+
+    content: "";
   }
 }
 
