@@ -12,6 +12,15 @@
   line-height: 1;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: @red;
+  }
+
+  &:active {
+    color: fade(@red, 30%);
+  }
 }
 
 .button--red {
@@ -19,6 +28,34 @@
   border-color: @red;
   color: @red;
   width: 100%;
+
+  &:hover {
+    background-color: @red;
+    color: white;
+  }
+
+  &:active {
+    color: fade(white, 30%);
+  }
+}
+
+.button--cancel {
+  background: inherit;
+  opacity: 0.1;
+  border-color: @blue;
+  color: @blue;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.3;
+    color: @blue;
+    background: inherit;
+  }
+
+  &:active {
+    background-color: @blue;
+    color: fade(white, 30%);
+  }
 }
 
 .button--disabled {
