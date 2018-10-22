@@ -10,6 +10,8 @@
   text-align: center;
   text-decoration: none;
   line-height: 1;
+  outline: none;
+  cursor: pointer;
 }
 
 .button--red {
@@ -26,7 +28,20 @@
 .button--submit {
   width: 276px;
   margin: 0 auto;
-  border-color: @green;
   border-radius: 0;
   background: @green;
+  border: 0;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade(white, 30%);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: @gray;
+  }
 }
