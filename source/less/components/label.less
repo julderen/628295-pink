@@ -7,10 +7,12 @@
 }
 
 .label--checkbox {
+  position: relative;
   display: flex;
   text-transform: none;
   font-size: 18px;
   color: @blue;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -20,6 +22,50 @@
     background-color: white;
     border: solid 2px @gray;
     margin-right: 34px;
+  }
+
+  &:hover::before {
+    border-color: black;
+  }
+
+  &:active::before {
+    border-color: @red;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: block;
+    width: 16px;
+    height: 8px;
+    transform: rotate(135deg);
+    background-color: inherit;
+    border: solid 2px @red;
+    border-left: none;
+    border-bottom: none;
+  }
+}
+
+input[type="checkbox"]:checked + .label--checkbox {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: block;
+    width: 16px;
+    height: 8px;
+    transform: rotate(135deg);
+    background-color: inherit;
+    border: solid 2px @red;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  &:active::after {
+    content: none;
   }
 }
 
@@ -81,10 +127,10 @@
 
       content: "";
       position: absolute;
-      right: 0;
-      top: 0;
-      width: 60px;
-      height: 60px;
+      right: 2px;
+      top: 2px;
+      width: 56px;
+      height: 56px;
       background-color: @gray;
       background-image: url("../img/icon-mail.svg");
       background-size: inherit;
@@ -99,10 +145,10 @@
 
       content: "";
       position: absolute;
-      right: 0;
-      top: 0;
-      width: 60px;
-      height: 60px;
+      right: 2px;
+      top: 2px;
+      width: 56px;
+      height: 56px;
       background-color: @gray;
       background-image: url("../img/icon-phone.svg");
       background-size: inherit;
