@@ -53,6 +53,7 @@
   top: @mobile-header-height;
   background-color: @blue;
   width: 100%;
+  z-index: 2;
 }
 
 .page-header__list {
@@ -80,6 +81,15 @@
   height: 100%;
   color: white;
   text-decoration: none;
+
+  &:hover {
+    color: @red;
+  }
+
+  &:active {
+    color: @red;
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu--close {
@@ -132,8 +142,34 @@
   }
 
   .page-header__link {
+    position: relative;
     display: block;
     height: auto;
+
+    &:active {
+      color: white;
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__link--active {
+    &:hover::after {
+      background-color: @red;
+    }
+
+    &:active::after {
+      background-color: white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
   }
 
   .page-header__logo-wrapper {
