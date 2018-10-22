@@ -3,6 +3,9 @@
 
   "rules": {
     "declaration-no-important": true,
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["thumb", "track"]
+    }],
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
 }

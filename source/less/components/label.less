@@ -1,0 +1,118 @@
+.label {
+  display: block;
+  color: @red;
+  line-height: 2.14;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.label--checkbox {
+  display: flex;
+  text-transform: none;
+  font-size: 18px;
+  color: @blue;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: solid 2px @gray;
+    margin-right: 34px;
+  }
+}
+
+.label--radio {
+  display: flex;
+  text-transform: none;
+  font-size: 18px;
+  color: @blue;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: solid 2px @gray;
+    border-radius: 50%;
+    margin-right: 34px;
+  }
+}
+
+.label--text-area {
+  text-align: center;
+}
+
+.label__checkbox {
+  display: none;
+}
+
+.label__radio {
+  display: none;
+}
+
+@media (min-width: @table-width) {
+  .label--reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label__input--reverse {
+    order: -1;
+    margin: 0 0 20px;
+  }
+
+  .label--inline {
+    display: flex;
+    align-items: center;
+
+    .input {
+      margin-left: 22px;
+    }
+  }
+
+  .label--input-icon-email {
+    position: relative;
+
+    &::after {
+      .set-icon-background-style();
+
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-color: @gray;
+      background-image: url("../img/icon-mail.svg");
+      background-size: inherit;
+    }
+  }
+
+  .label--input-icon-phone {
+    position: relative;
+
+    &::after {
+      .set-icon-background-style();
+
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-color: @gray;
+      background-image: url("../img/icon-phone.svg");
+      background-size: inherit;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .label--checkbox::before,
+  .label--radio::before {
+    margin-right: 20px;
+  }
+}
