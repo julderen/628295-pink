@@ -98,7 +98,7 @@
 
       <section class="intro">
         <div class="wrapper">
-          <h1 class="intro__title">Фотографии<br>пользователей</h1>
+          <h1 class="intro__title intro__title--photo">Фотографии<br>пользователей</h1>
         </div>
       </section>
 
@@ -110,7 +110,11 @@
         <ul class="photos__list">
           <li class="photos__item photos__item--panorama">
             <a class="photos__link photos__link--panorama">
-              <img src="img/panorama-mobile@1x.jpg" class="photos__image photos__image--panorama">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                <img src="img/panorama-mobile@1x.jpg" class="photos__image photos__image--panorama">
+              </picture>
             </a>
             <blockquote class="photos__desc">
               <cite class="photos__author">Анна<span class="photos__time">(5 мин назад)</span></cite>
@@ -126,12 +130,12 @@
           </li>
           <li class="photos__item">
             <a class="photos__link">
-              <img src="img/photo-drumset-mobile@1x.jpg" class="photos__image">
+              <img src="img/photo-car-mobile@1x.jpg" class="photos__image">
             </a>
             <blockquote class="photos__desc">
-              <cite class="photos__author">Антон <span class="photos__time">(12 часов назад)</span></cite>
+              <cite class="photos__author">Левон <span class="photos__time">(5 часов назад)</span></cite>
               <span class="photos__text">
-                Соседи будут рады!
+                Вчера он на луну летал, сегодня в руки к нам попал.
               </span>
               <div class="photos__like like">
                 <button type="button" class="like__button"></button>
@@ -141,12 +145,12 @@
           </li>
           <li class="photos__item">
             <a class="photos__link">
-              <img src="img/photo-car-mobile@1x.jpg" class="photos__image">
+              <img src="img/photo-drumset-mobile@1x.jpg" class="photos__image">
             </a>
             <blockquote class="photos__desc">
-              <cite class="photos__author">Левон <span class="photos__time">(5 часов назад)</span></cite>
+              <cite class="photos__author">Антон <span class="photos__time">(12 часов назад)</span></cite>
               <span class="photos__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
+                Соседи будут рады!
               </span>
               <div class="photos__like like">
                 <button type="button" class="like__button"></button>
@@ -254,7 +258,7 @@
 
     </main>
 
-    <footer class="page-footer wrapper">
+    <footer class="page-footer page-footer--photo-page wrapper">
       <a class="page-footer__logo">
         <svg class="page-header__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>

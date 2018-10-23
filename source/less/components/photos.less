@@ -1,6 +1,10 @@
+.photos {
+  margin-top: 43px;
+}
+
 .photos__title {
   display: block;
-  margin: 56px auto;
+  margin: 0 auto 50px;
   width: 250px;
   line-height: 2.14;
   color: @blue;
@@ -20,6 +24,8 @@
 }
 
 .photos__item {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: @gray--light;
   margin-bottom: 20px;
@@ -30,8 +36,11 @@
 }
 
 .photos__image--panorama {
-  margin: 0 calc(-50vw + 50%);
+  height: 138px;
   width: 100vw;
+  min-width: 320px;
+  margin: 0 calc(-50vw + 50%);
+  object-fit: cover;
 }
 
 .photos__link--panorama {
@@ -39,7 +48,7 @@
     content: "ПАНОРАМА ДНЯ";
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
     display: block;
     width: 140px;
     height: 36px;
@@ -59,8 +68,12 @@
 }
 
 .photos__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
-  padding: 25px 20px 28px;
+  flex-grow: 1;
+  padding: 20px 18px 22px;
   color: @blue;
 }
 
@@ -73,22 +86,24 @@
 
 .photos__text {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+  flex-grow: 1;
 }
 
 .photos__time {
+  margin-left: 3px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 @media (min-width: @table-width) {
   .photos {
-    width: 620px;
-    margin: auto;
+    margin-top: 91px;
   }
 
   .photos__title {
     width: 450px;
-    margin: 100px auto 80px;
+    margin: 0 auto 75px;
     font-size: 18px;
     line-height: 1.67;
   }
@@ -101,23 +116,51 @@
     justify-content: space-between;
   }
 
+  .photos__image {
+    height: 300px;
+    object-fit: cover;
+  }
+
   .photos__item {
     width: 300px;
+    min-height: 455px;
     margin: 0 0 20px;
+  }
+
+  .photos__desc {
+    padding: 23px 27px 26px;
+  }
+
+  .photos__image--panorama {
+    height: 510px;
+  }
+
+  .photos__text {
+    margin-bottom: 17px;
   }
 
   .photos__item--panorama {
     width: 100%;
+    margin: 0 0 50px;
 
     .photos__desc {
       display: flex;
       justify-content: space-between;
+      flex-direction: row;
       flex-wrap: wrap;
     }
 
     .photos__text {
       width: 100%;
       margin: 0;
+    }
+
+    .like {
+      width: max-content;
+    }
+
+    .photos__like {
+      order: -1;
     }
   }
 
@@ -129,10 +172,6 @@
 
   .photos__author {
     order: -2;
-  }
-
-  .photos__like {
-    order: -1;
   }
 }
 
