@@ -106,7 +106,12 @@
 
 @media (min-width: @table-width) {
   .prices {
-    padding: 100px 20px 70px;
+    padding: 86px 20px 70px;
+    margin-top: 20px;
+
+    &::before {
+      border-bottom: 52px solid #f2f2f2;
+    }
   }
 
   .prices__list {
@@ -116,8 +121,22 @@
 
   .prices__header {
     width: 152px;
+    height: 80px;
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  .prices__header--hit {
+    &::before {
+      background: url("../img/bg-hit-tablet.svg");
+      width: 60px;
+      height: 60px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 6px;
+    }
   }
 
   .prices__feature {

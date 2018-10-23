@@ -22,14 +22,14 @@
 }
 
 .intro__image {
-  width: 259px;
-  padding-top: 106px;
+  width: 100%;
 }
 
 .intro__image-wrapper {
-  width: 320px;
+  width: 259px;
+  padding-top: 106px;
+  margin-left: -20px;
   line-height: 0;
-  margin: 0 -20px;
 }
 
 .intro__app {
@@ -45,13 +45,15 @@
     margin: -@desktop-header-height auto 0;
     padding-top: @desktop-header-height;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    overflow: hidden;
   }
 
   .intro__image-wrapper {
     position: absolute;
     bottom: 0;
-    width: 660px;
+    width: 700px;
     flex-shrink: 0;
+    margin-left: -40px;
   }
 
   .intro__app {
