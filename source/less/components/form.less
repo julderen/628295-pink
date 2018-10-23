@@ -90,7 +90,7 @@
   .form {
     width: 620px;
     margin: 0 auto;
-    padding: 100px 0 0;
+    padding: 91px 0 0;
 
     form {
       display: flex;
@@ -105,7 +105,7 @@
 
   .form__legend {
     width: max-content;
-    margin: -10px auto 40px;
+    margin: -10px auto 44px;
     max-width: max-content;
     padding: 0 32px;
     background: white;
@@ -116,9 +116,9 @@
     flex-grow: 1;
     min-width: 80%;
     background: white;
-    padding: 0 60px 54px;
+    padding: 0 58px 52px;
     border: solid 2px @gray;
-    margin: 0 0 50px;
+    margin: 0 0 64px;
 
     .wrapper {
       width: auto;
@@ -127,15 +127,16 @@
 
   .form__legend--no-display-tablet-down {
     display: block;
+    margin: -10px auto 38px;
   }
 
   .form__set--no-display-tablet-down {
-    padding: 0 60px 50px;
+    padding: 0 60px;
   }
 
   .form__title {
     width: 490px;
-    margin: 0 auto 76px;
+    margin: 0 auto 72px;
     font-size: 18px;
     line-height: 1.67;
     text-align: center;
@@ -147,12 +148,21 @@
   }
 
   .form__text-area {
-    margin: 0;
+    margin: 0 0 45px;
+  }
+
+  .form__set--app {
+    order: -2;
+  }
+
+  .form__set--contacts {
+    order: -1;
   }
 
   .form__person-info {
+    order: -3;
     flex-grow: 1;
-    margin-bottom: 50px;
+    margin-bottom: 13px;
   }
 
   .form__button {
@@ -168,6 +178,11 @@
     width: 100%;
     justify-content: space-between;
     padding: 0 0 50px;
+    align-items: baseline;
+
+    .button {
+      width: 300px;
+    }
   }
 }
 

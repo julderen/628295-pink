@@ -20,9 +20,22 @@
   border-color: @red;
 }
 
+.input__icon {
+  display: none;
+  padding: 19px 19px 20px;
+  background: @gray;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+
+  path {
+    fill: @red;
+  }
+}
+
 @media (min-width: @table-width) {
-  .input--icon {
-    padding-right: 80px;
+  .input__icon {
+    display: block;
   }
 }
 
