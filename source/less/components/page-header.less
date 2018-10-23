@@ -53,16 +53,26 @@
 }
 
 .page-header__toggle-button {
-  .set-icon-background-style();
-
   width: 50px;
   height: 24px;
   flex-shrink: 0;
   border: 0;
   background-color: initial;
-  background-image: url("../img/icon-menu-burger.svg");
   cursor: pointer;
   outline: none;
+
+  .page-header__toggle-icon--open {
+    display: none;
+  }
+
+  &:hover path {
+    fill: @red;
+  }
+
+  &:active path {
+    opacity: 0.3;
+    fill: @red;
+  }
 }
 
 .page-header__menu {
@@ -120,7 +130,14 @@
 .page-header__toggle-button--open {
   width: 24px;
   height: 24px;
-  background-image: url("../img/icon-menu-cross.svg");
+
+  .page-header__toggle-icon--close {
+    display: none;
+  }
+
+  .page-header__toggle-icon--open {
+    display: block;
+  }
 }
 
 .page-header__toggle-button--nojs {
