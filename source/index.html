@@ -99,7 +99,11 @@
       <section class="intro">
         <div class="wrapper">
           <div class="intro__image-wrapper">
-            <img class="intro__image" src="img/iphone-hand-desktop@1x.png" alt="Приложение" />
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png" />
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png" />
+              <img class="intro__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение" />
+            </picture>
           </div>
           <div class="intro__app app">
             <h1 class="app__title">Взгляните на жизнь иначе!</h1>
@@ -121,7 +125,7 @@
       </section>
 
       <section class="features">
-        <h1 class="features__title">Устали от серости мегаполиса</h1>
+        <h1 class="features__title">Устали от серости мегаполиса?</h1>
         <h1 class="features__title">Нам есть, что вам<br>предложить!</h1>
         <div class="features__list-wrapper">
           <ul class="features__list wrapper">
