@@ -172,12 +172,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .prices {
+    margin-top: 42px;
+    padding: 146px 20px 90px;
+
+    &::before {
+      border-bottom: 82px solid #f2f2f2;
+    }
+  }
+
   .prices__price {
     font-size: 24px;
   }
 
   .prices__header {
     width: 234px;
+    height: 100px;
     font-size: 18px;
   }
 
