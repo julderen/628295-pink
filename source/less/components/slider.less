@@ -25,6 +25,24 @@
   height: 41px;
   width: 22px;
   padding: 0;
+  border: none;
+  background: inherit;
+  outline: none;
+}
+
+.slider__arrow {
+  path {
+    fill: @blue;
+    opacity: 0.3;
+  }
+
+  &:hover path {
+    opacity: 0.6;
+  }
+
+  &:active path {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: @desktop-width) {
