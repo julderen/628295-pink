@@ -17,10 +17,27 @@
   cursor: pointer;
   line-height: 0;
   width: 76px;
+
+  &:hover path {
+    fill: @red;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
   width: 100%;
+
+  path {
+    fill: white;
+  }
+}
+
+.page-header__logo-image--table-up {
+  display: none;
 }
 
 .page-header__logo-wrapper {
@@ -117,6 +134,14 @@
 }
 
 @media (min-width: @table-width) {
+  .page-header__logo-image--table-up {
+    display: block;
+  }
+
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
   .page-header__logo-wrapper {
     height: @desktop-header-height;
   }
