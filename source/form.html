@@ -104,22 +104,23 @@
 
       <section class="form">
         <h1 class="form__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="form__optional-desc">Пожалуйста, заполните форму ниже:</span>
         </h1>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form__person-info wrapper">
-            <label class="label label--inline">
+            <label for="surname" class="label label--inline">
               Фамилия:
-              <input required class="input" type="text" name="surname" placeholder="Укажите фамилию *">
             </label>
-            <label class="label label--inline">
+            <input id="surname" required class="input" type="text" name="surname" placeholder="Укажите фамилию *">
+            <label for="name" class="label label--inline">
               Имя:
-              <input required class="input" type="text" name="name" placeholder="Введите вашу имя *">
             </label>
-            <label class="label label--inline">
+            <input id="name" required class="input" type="text" name="name" placeholder="Введите вашу имя *">
+            <label for="patronymic" class="label label--inline">
               Отчество:
-              <input class="input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
+            <input id="patronymic" class="input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </div>
 
           <fieldset class="form__set form__set--achievements">
@@ -162,14 +163,14 @@
               Контактная информация
             </h2>
             <div class="form__contacts-wrapper">
-                <label class="label label--reverse label--input-icon-phone">
+                <label for="phone" class="label label--reverse label--input-icon-phone">
                   Номер телефона
-                  <input class="input label__input label__input--reverse input--icon" type="tel" name="phone" placeholder="Номер, пожалуйста">
                 </label>
-                <label class="label label--reverse label--input-icon-email">
+                <input id="phone" class="input label__input label__input--reverse input--icon" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                <label for="email" class="label label--reverse label--input-icon-email">
                   Адрес почты
-                  <input class="input label__input label__input--reverse input--icon" required type="email" name="email" placeholder="Введите почту *">
                 </label>
+                <input id="email" class="input label__input label__input--reverse input--icon" required type="email" name="email" placeholder="Введите почту *">
               </div>
             </div>
           </fieldset>
