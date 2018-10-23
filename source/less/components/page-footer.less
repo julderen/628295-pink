@@ -10,6 +10,18 @@
   display: block;
   cursor: pointer;
   margin-bottom: 34px;
+
+  &:hover g path {
+    fill: @red;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    g path {
+      fill: @blue;
+    }
+  }
 }
 
 .page-footer__socials {
