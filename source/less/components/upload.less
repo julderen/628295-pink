@@ -95,21 +95,21 @@
 
 .upload__icon {
   cursor: pointer;
-
-  .svg-fill(@blue, 0.3);
+  color: @blue;
+  opacity: 0.3;
 
   &:hover {
-    .svg-fill(@blue, 0.5);
+    opacity: 0.5;
   }
 }
 
 .upload__icon--active {
   cursor: default;
-
-  .svg-fill(@red);
+  color: @red;
+  opacity: 1;
 
   &:hover {
-    .svg-fill(@red);
+    opacity: 1;
   }
 }
 
@@ -162,11 +162,12 @@
     height: 25px;
     margin: 0 31px 0 0;
     cursor: default;
-
-    .svg-fill(@red);
+    color: @red;
+    opacity: 1;
 
     &:hover {
-      .svg-fill(@red);
+      color: @red;
+      opacity: 1;
     }
   }
 

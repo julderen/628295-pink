@@ -20,14 +20,16 @@
   background-color: inherit;
   outline: none;
 
-  .svg-fill(@red);
+  color: @red;
 
   &:hover {
-    .svg-fill(@blue);
+    color: @blue;
+    opacity: 0.3;
   }
 
   &:active {
-    .svg-fill(@red, 0.3);
+    color: @blue;
+    opacity: 0.5;
   }
 }
 

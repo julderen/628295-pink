@@ -5,9 +5,26 @@
 }
 
 .research__wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &::after {
+    content: "24";
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    top: 68px;
+    width: 254px;
+    height: 254px;
+    left: 22px;
+    font-size: 120px;
+    font-weight: 500;
+    color: @red;
+    border-radius: 50%;
+    border: 17px solid @red;
+  }
 }
 
 .research__title {

@@ -4,8 +4,8 @@
   color: @blue;
 }
 
-.copyright__logo path {
-  fill: @red;
+.copyright__logo {
+  color: @red;
 }
 
 .copyright__link {
@@ -15,12 +15,13 @@
   text-decoration: none;
   line-height: 0;
 
-  &:hover .copyright__logo path {
-    fill: @blue--dark;
+  &:hover .copyright__logo {
+    color: @blue--dark;
   }
 
-  &:active .copyright__logo path {
-    fill: fade(@blue--dark, 30%);
+  &:active .copyright__logo {
+    color: @blue--dark;
+    opacity: 0.3;
   }
 }
 
