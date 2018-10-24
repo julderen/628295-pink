@@ -1,17 +1,41 @@
 .input {
   width: 100%;
-  height: 60px;
+  height: 63px;
   padding: 0 20px;
   box-sizing: border-box;
+  margin-bottom: 19px;
   border: solid 2px @gray;
-  line-height: 60px;
+  line-height: 30px;
   font-size: 18px;
   color: @blue;
+  outline: none;
+}
+
+.input:hover {
+  border-color: black;
+}
+
+.input:active,
+.input:focus {
+  border-color: @red;
+}
+
+.input__icon {
+  display: none;
+  padding: 19px 19px 20px;
+  background: @gray;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+
+  path {
+    fill: @red;
+  }
 }
 
 @media (min-width: @table-width) {
-  .input--icon {
-    padding-right: 80px;
+  .input__icon {
+    display: block;
   }
 }
 

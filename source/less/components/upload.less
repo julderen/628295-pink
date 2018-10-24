@@ -1,10 +1,11 @@
 .upload {
   min-width: 320px;
+  padding: 15px 0;
 }
 
 .upload__title {
   display: block;
-  margin: 48px 32px;
+  margin: 0 32px 46px;
   line-height: 2.14;
   font-size: 14px;
   font-weight: 400;
@@ -14,7 +15,8 @@
 
 .upload__form {
   background: @gray--light;
-  padding: 20px 0 40px;
+  padding: 20px 0 38px;
+  margin-bottom: 24px;
 }
 
 .upload__image {
@@ -46,7 +48,7 @@
 }
 
 .upload__button-wrapper {
-  margin: 40px 20px;
+  margin-top: 40px;
 
   .upload__button:last-child {
     margin-bottom: 0;
@@ -84,10 +86,14 @@
 }
 
 .upload__icon {
-  margin: 0 16px 40px;
+  margin: 0 16px 34px;
 }
 
 @media (min-width: @table-width) {
+  .upload {
+    padding: 45px 0 0;
+  }
+
   .upload__title {
     font-size: 18px;
     line-height: 1.67;
@@ -109,8 +115,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    height: 510px;
-    padding: 56px 20px;
+    height: 450px;
+    padding: 34px 0 15px;
     box-sizing: border-box;
   }
 
@@ -156,6 +162,10 @@
     }
   }
 
+  .upload__button {
+    margin-bottom: 25px;
+  }
+
   .upload__button-wrapper {
     width: 260px;
     margin: 0 auto;
@@ -163,13 +173,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .upload {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
   .upload__form {
     margin: 0 auto;
     width: max-content;
   }
 
   .upload__form-wrapper {
-    padding: 50px 80px;
+    padding: 34px 80px 16px;
   }
 
   .upload__label-list {
@@ -195,6 +210,7 @@
   .upload__button-wrapper {
     display: flex;
     width: 410px;
+    margin: 0 0 0 90px;
 
     .upload__button:last-child {
       margin-right: 0;

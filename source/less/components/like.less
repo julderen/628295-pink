@@ -1,4 +1,6 @@
 .like {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   text-transform: uppercase;
   color: @red;
@@ -14,4 +16,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/icon-heart.svg");
+}
+
+
+@media (min-width: @table-width) {
+  .like {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .like__button {
+    order: 1;
+    margin: 0 0 0 18px;
+  }
 }

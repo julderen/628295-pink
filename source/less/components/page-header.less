@@ -1,6 +1,3 @@
-@mobile-header-height: 60px;
-@desktop-header-height: 110px;
-
 .page-header {
   width: 100%;
   min-width: 320px;
@@ -9,18 +6,35 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   z-index: 2;
-  background-color: fade(@blue--dark, 90%);
+  background: fade(black, 40%);
 }
 
 .page-header__logo {
   display: inline-block;
   cursor: pointer;
   line-height: 0;
-  width: 76px;
+
+  &:hover path {
+    fill: @red;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+  }
+}
+
+.page-header__toggle-icon {
+  width: 100%;
 }
 
 .page-header__logo-image {
-  width: 100%;
+  width: 76px;
+}
+
+.page-header__logo-image--table,
+.page-header__logo-image--desktop {
+  display: none;
 }
 
 .page-header__logo-wrapper {
@@ -29,32 +43,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 1px;
-  box-shadow: 0 1px 0 0 #000000;
   width: 100%;
-}
-
-.page-header__menu {
-  width: 100%;
+  background: inherit;
+  z-index: 2;
 }
 
 .page-header__toggle-button {
-  .set-icon-background-style();
-
-  width: 24px;
+  width: 50px;
   height: 24px;
   flex-shrink: 0;
   border: 0;
+  padding: 0;
   background-color: initial;
-  background-image: url("../img/icon-menu-cross.svg");
   cursor: pointer;
-  box-shadow: 0 1px 0 0 var(--black), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  outline: none;
+
+  .page-header__toggle-icon--open {
+    display: none;
+  }
+
+  &:hover path {
+    fill: @red;
+  }
+
+  &:active path {
+    opacity: 0.3;
+    fill: @red;
+  }
+}
+
+.page-header__menu {
+  position: absolute;
+  top: @mobile-header-height + 2px;
+  background-color: @blue;
+  width: 100%;
+  z-index: 2;
 }
 
 .page-header__list {
   .reset-list-style();
 
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -64,10 +92,10 @@
 }
 
 .page-header__item {
-  height: @mobile-header-height;
-  margin-bottom: 1px;
-  line-height: @mobile-header-height;
-  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  height: 62px;
+  margin-bottom: 2px;
+  line-height: 62px;
+  box-shadow: 0 2px 0 0 #000000, inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
   cursor: pointer;
 }
 
@@ -77,15 +105,73 @@
   height: 100%;
   color: white;
   text-decoration: none;
+
+  &:hover {
+    color: @red;
+  }
+
+  &:active {
+    color: @red;
+    opacity: 0.3;
+  }
+}
+
+.page-header__menu--close {
+  display: none;
+}
+
+.page-header__menu--open {
+  display: block;
+}
+
+.page-header__logo-wrapper--open {
+  box-shadow: 0 2px 0 0 #000000;
+  background-color: @blue;
+
+  .page-header__toggle-button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-header__toggle-icon--close {
+    display: none;
+  }
+
+  .page-header__toggle-icon--open {
+    display: block;
+  }
+}
+
+.page-header__logo-wrapper--nojs .page-header__toggle-button {
+  display: none;
+}
+
+.page-header__menu--nojs {
+  position: relative;
+  display: block;
+  top: 0;
 }
 
 @media (min-width: @table-width) {
-  .page-header__logo-wrapper {
-    height: 110px;
+  .page-header__logo-image--table {
+    display: block;
+    margin-bottom: 16px;
   }
 
-  .page-header__logo {
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-wrapper {
+    height: @desktop-header-height;
+  }
+
+  .page-header__logo-image {
     width: 150px;
+  }
+
+  .page-header__menu {
+    top: @desktop-header-height + 2px;
   }
 }
 
@@ -95,14 +181,48 @@
     align-items: center;
     justify-content: center;
     height: @desktop-header-height;
-    background-color: fade(black, 30%);
     padding: 0;
     overflow: auto;
   }
 
+  .page-header__logo-image--desktop {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .page-header__logo-image--table {
+    display: none;
+  }
+
   .page-header__link {
+    position: relative;
     display: block;
     height: auto;
+
+    &:active {
+      color: white;
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__link--active {
+    &:hover::after {
+      background-color: @red;
+    }
+
+    &:active::after {
+      background-color: white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
   }
 
   .page-header__logo-wrapper {
@@ -110,10 +230,7 @@
     width: 150px;
     padding: 0;
     margin-right: 170px;
-  }
-
-  .page-header__logo {
-    margin: 0;
+    background: transparent;
   }
 
   .page-header__toggle-button {
@@ -121,10 +238,15 @@
   }
 
   .page-header__menu {
+    display: block;
+    position: relative;
+    top: 0;
     width: 620px;
+    background-color: transparent;
   }
 
   .page-header__list {
+    display: flex;
     width: inherit;
     flex-direction: row;
     align-content: center;

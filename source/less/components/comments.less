@@ -1,5 +1,5 @@
 .comments {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .comments__author {
-  margin: 0 0 25px;
+  margin: 0 0 13px;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -24,9 +24,9 @@
 
 .comments__text {
   color: @blue;
-  line-height: 2.14;
+  line-height: 2.15;
 
-  margin: 0 0 40px;
+  margin: 0 0 34px;
 }
 
 .comments__author-desc {
@@ -38,16 +38,20 @@
 }
 
 @media (min-width: @table-width) {
+  .comments {
+    margin-top: 100px;
+  }
+
   .comments__author {
     order: 1;
-    margin-bottom: 44px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
 
   .comments__text {
     font-size: 18px;
     line-height: 1.67;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
 
   .comments__author-desc {
@@ -69,12 +73,23 @@
     width: 685px;
 
     &::before {
-      content: url("../img/icon-quotes.svg");
       .set-icon-background-style();
 
+      content: url("../img/icon-quotes.svg");
       width: 80px;
       height: 64px;
-      margin-bottom: 60px;
+      margin-bottom: 46px;
     }
+  }
+
+  .comments__author {
+    font-size: 24px;
+    line-height: 1.67;
+    margin-bottom: 0;
+  }
+
+  .comments__author-desc {
+    font-size: 18px;
+    line-height: 1.4;
   }
 }

@@ -10,11 +10,27 @@
   display: block;
   cursor: pointer;
   margin-bottom: 34px;
+
+  &:hover g path {
+    fill: @red;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    g path {
+      fill: @blue;
+    }
+  }
 }
 
 .page-footer__socials {
   width: 180px;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
+}
+
+.page-footer--photo-page {
+  padding-top: 0;
 }
 
 @media (min-width: @table-width) {
@@ -24,7 +40,7 @@
   }
 
   .page-footer__socials {
-    margin: 0;
+    margin: 0 0 0 -16px;
   }
 
   .page-footer__logo {

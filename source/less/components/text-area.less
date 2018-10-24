@@ -2,12 +2,36 @@
   width: 100%;
   height: 200px;
   box-sizing: border-box;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 14px 18px;
+  margin-top: 8px;
   background: white;
   border: solid 2px @gray--light;
   resize: none;
   font-size: 18px;
   line-height: 1.67;
   color: @blue;
+  outline: none;
+}
+
+
+.text-area:hover {
+  border-color: black;
+}
+
+.text-area:active,
+.text-area:focus {
+  border-color: @red;
+}
+
+
+@media (min-width: @table-width) {
+  .text-area {
+    height: 192px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-area {
+    height: 125px;
+  }
 }

@@ -1,10 +1,10 @@
 .features {
   min-width: 320px;
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .features__title {
-  margin: 0 auto 20px;
+  margin: 0 auto 31px;
   width: 210px;
   font-size: 24px;
   font-weight: 300;
@@ -15,36 +15,63 @@
 
 .features__list-wrapper {
   background: @gray--light;
+  position: relative;
+  margin-top: 64px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 0;
+    top: -34px;
+    border-bottom: 34px solid @gray--light;
+    border-left: 100vw solid transparent;
+    background: white;
+    box-sizing: border-box;
+  }
 }
 
 .features__list {
   .reset-list-style();
 
   margin: auto;
+  padding-top: 47px;
   text-align: center;
 }
 
 .features__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:nth-child(3)::after {
     content: url("../img/iphone-screen-mobile@1x.png");
     height: 280px;
     overflow: hidden;
+    margin-top: 42px;
   }
 }
 
 .features__subtitle {
+  margin: 0 0 10px;
   font-size: 18px;
   font-weight: 500;
 }
 
 .features__desc {
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 @media (min-width: @table-width) and (max-width: @desktop-width - 1) {
+  .features {
+    padding-top: 48px;
+  }
+
   .features__title {
     width: 590px;
     font-size: 40px;
@@ -58,6 +85,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 82px;
+
+    &::before {
+      border-bottom: 50px solid #f2f2f2;
+    }
+  }
+
+  .features__item {
+    margin-bottom: 34px;
   }
 
   .features__item:nth-child(3)::after {
@@ -72,7 +108,7 @@
 
   .features__list {
     position: relative;
-    padding: 0 30px 0 330px;
+    padding: 34px 30px 20px 330px;
     width: 300px;
     text-align: left;
   }
@@ -80,8 +116,12 @@
 
 
 @media (min-width: @desktop-width) {
+  .features {
+    padding-top: 68px;
+  }
+
   .features__title {
-    width: 731px;
+    width: 760px;
     font-size: 50px;
 
     &:first-child {
@@ -91,13 +131,23 @@
 
   .features__list {
     display: flex;
-    padding: 0 0 70px;
+    padding: 0 0 66px;
     justify-content: center;
     flex-direction: row;
   }
 
+  .features__list-wrapper {
+    margin-top: 74px;
+
+    &::before {
+      border-bottom: 98px solid #f2f2f2;
+      top: 0;
+    }
+  }
+
   .features__item {
     padding: 0 10px;
+    margin-bottom: 0;
 
     &:nth-child(3)::after {
       content: none;
@@ -107,7 +157,7 @@
       width: 300px;
       height: auto;
       line-height: 0;
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
 
     &:nth-child(1)::before {
@@ -125,7 +175,7 @@
 
   .features__subtitle {
     width: 226px;
-    margin: 0 auto 30px;
+    margin: 0 auto 26px;
     font-size: 30px;
     line-height: 1;
   }
