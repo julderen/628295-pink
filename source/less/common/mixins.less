@@ -9,3 +9,17 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.retina(@rules) {
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    @rules();
+  }
+}
+
+.svg-fill(@color, @opacity: 1) {
+  path,
+  rect {
+    fill: @color;
+    opacity: @opacity;
+  }
+}

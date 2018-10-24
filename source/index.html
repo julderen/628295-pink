@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
 
@@ -98,9 +99,9 @@
         <div class="wrapper">
           <div class="intro__image-wrapper">
             <picture>
-              <source  media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png" />
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png" />
-              <img class="intro__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение" />
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x" />
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x" />
+              <img class="intro__image" src="img/iphone-hand-mobile@1x.png"  srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение" />
             </picture>
           </div>
           <div class="intro__app app">
@@ -167,6 +168,14 @@
       </section>
 
       <section class="comments wrapper">
+        <svg class="comments__quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+            <g>
+              <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+            </g>
+            <g>
+              <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+            </g>
+        </svg>
         <div class="slider">
           <button type="button" class="slider__toggle-arrow">
             <svg class="slider__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="42px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
@@ -207,16 +216,16 @@
               <th class="prices__feature-name-th">
               </th>
               <th class="prices__header">
-                Анлим
-                <span class="prices__price">9,99 USD</span>
+                База
+                <span class="prices__price">1,99 USD</span>
               </th>
               <th class="prices__header prices__header--hit">
                 Стандарт
                 <span class="prices__price">3,99 USD</span>
               </th>
               <th class="prices__header">
-                База
-                <span class="prices__price">1,99 USD</span>
+                Анлим
+                <span class="prices__price">9,99 USD</span>
               </th>
             </tr>
             <tr>
@@ -226,19 +235,25 @@
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
             </tr>
@@ -249,19 +264,25 @@
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
-                  <span class="prices__status prices__status--no"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
             </tr>
@@ -272,19 +293,25 @@
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
-                  <span class="prices__status prices__status--yes"></span>
+                  <svg class="prices__status prices__status--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
-                  <span class="prices__status prices__status--no"></span>
+                  <svg class="prices__status prices__status--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </div>
               </td>
               <td class="prices__feature">
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
-                  <span class="prices__status prices__status--no"></span>
+                  <svg class="prices__status prices__status--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </div>
               </td>
             </tr>
@@ -317,7 +344,7 @@
           </address>
         </div>
       </div>
-      <div class="home-footer__map map">
+      <div id="map" class="home-footer__map">
       </div>
       <div class="page-footer wrapper">
         <svg class="page-footer__logo-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -362,6 +389,25 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 16,
+          controls: []
+        });
+
+        var myGeoObject = new ymaps.GeoObject({
+          geometry: {
+            type: "Point", // тип геометрии - точка
+            coordinates: [59.938631, 30.323055] // координаты точки
+          }
+        });
+
+        myMap.geoObjects.add(myGeoObject);
+      }
+    </script>
     <script src="./js/menuToggle.js"></script>
   </body>
 </html>

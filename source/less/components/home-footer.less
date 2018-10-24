@@ -56,6 +56,7 @@
     position: absolute;
     bottom: -33px;
     transform: translateX(calc(-50% + 140px));
+    z-index: 2;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-top: 33px solid white;
@@ -81,9 +82,9 @@
     padding-bottom: 28px;
 
     &::after {
+      transform: none;
       bottom: -66px;
       border-top: 66px solid white;
-      transform: translateX(calc(-50% + 330px));
     }
   }
 
