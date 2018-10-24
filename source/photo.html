@@ -293,7 +293,11 @@
         </h1>
         <form class="upload__form">
           <div class="upload__form-wrapper wrapper">
-            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="upload__image" src="img/photo-road-mobile@1x.jpg"  srcset=" img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+            </picture>
             <ul class="upload__label-list">
               <li class="upload__label-item upload__label-item--active">
                 <label class="upload__label">
