@@ -50,10 +50,17 @@
   }
 
   &:nth-child(3)::after {
-    content: url("../img/iphone-screen-mobile@1x.png");
-    height: 280px;
+    content: "";
+    height: 278px;
+    width: 157px;
     overflow: hidden;
-    margin-top: 42px;
+    margin: 45px auto 0;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-size: cover;
+
+    .retina({
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+    });
   }
 }
 
@@ -97,13 +104,17 @@
   }
 
   .features__item:nth-child(3)::after {
-    content: url("../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
     left: 20px;
     bottom: 0;
     width: 270px;
-    height: auto;
+    height: 482px;
     line-height: 0;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+
+    .retina({
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    });
   }
 
   .features__list {
@@ -146,7 +157,7 @@
   }
 
   .features__item {
-    padding: 0 10px;
+    padding: 0 18px;
     margin-bottom: 0;
 
     &:nth-child(3)::after {
@@ -154,22 +165,36 @@
     }
 
     &::before {
-      width: 300px;
-      height: auto;
+      content: "";
+      width: 285px;
+      height: 300px;
       line-height: 0;
       margin-bottom: 55px;
+      background-size: cover;
     }
 
     &:nth-child(1)::before {
-      content: url("../img/iphone-screen-1-desktop@1x.png");
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+      .retina({
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      });
     }
 
     &:nth-child(2)::before {
-      content: url("../img/iphone-screen-2-desktop@1x.png");
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+      .retina({
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      });
     }
 
     &:nth-child(3)::before {
-      content: url("../img/iphone-screen-3-desktop@1x.png");
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+      .retina({
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      });
     }
   }
 

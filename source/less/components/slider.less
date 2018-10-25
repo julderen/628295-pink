@@ -30,23 +30,21 @@
   height: 41px;
   width: 22px;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 28px;
   border: none;
   background: inherit;
   outline: none;
 }
 
 .slider__arrow {
-  path {
-    fill: @blue;
-    opacity: 0.3;
-  }
+  color: @blue;
+  opacity: 0.3;
 
-  &:hover path {
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.1;
   }
 }
@@ -54,7 +52,7 @@
 @media (min-width: @desktop-width) {
   .slider {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     justify-content: space-between;
   }

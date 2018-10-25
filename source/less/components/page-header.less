@@ -13,13 +13,14 @@
   display: inline-block;
   cursor: pointer;
   line-height: 0;
+  color: white;
 
-  &:hover path {
-    fill: @red;
+  &:hover {
+    color: @red;
   }
 
   &:active {
-    fill: white;
+    color: white;
     opacity: 0.3;
   }
 }
@@ -45,6 +46,7 @@
   padding: 0 20px;
   width: 100%;
   background: inherit;
+  color: white;
   z-index: 2;
 }
 
@@ -57,18 +59,19 @@
   background-color: initial;
   cursor: pointer;
   outline: none;
+  color: white;
 
   .page-header__toggle-icon--open {
     display: none;
   }
 
-  &:hover path {
-    fill: @red;
+  &:hover {
+    color: @red;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
-    fill: @red;
+    color: @red;
   }
 }
 

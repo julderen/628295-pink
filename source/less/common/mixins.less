@@ -9,3 +9,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.retina(@rules) {
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    @rules();
+  }
+}

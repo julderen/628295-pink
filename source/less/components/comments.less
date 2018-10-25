@@ -3,6 +3,15 @@
   margin-bottom: 20px;
 }
 
+.comments__quotes {
+  display: none;
+  width: 78px;
+  height: 64px;
+  margin: 0 auto 50px;
+
+  color: @gray;
+}
+
 .comments__list {
   .reset-list-style();
 }
@@ -61,7 +70,7 @@
 
 @media (min-width: @desktop-width) {
   .comments {
-    margin-top: 72px;
+    margin-top: 67px;
     margin-bottom: 30px;
   }
 
@@ -71,21 +80,16 @@
 
   .comments__item {
     width: 685px;
-
-    &::before {
-      .set-icon-background-style();
-
-      content: url("../img/icon-quotes.svg");
-      width: 80px;
-      height: 64px;
-      margin-bottom: 46px;
-    }
   }
 
   .comments__author {
     font-size: 24px;
     line-height: 1.67;
     margin-bottom: 0;
+  }
+
+  .comments__quotes {
+    display: block;
   }
 
   .comments__author-desc {
