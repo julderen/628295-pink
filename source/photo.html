@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
 
     <header class="page-header">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-image page-header__logo-image--mobile" height="22px" width="74px">
-            <use xlink:href="img/svg-sprite.svg#header-logo-mobile"></use>
+            <use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
           <svg class="page-header__logo-image page-header__logo-image--table" width="146px" height="40px">
-            <use xlink:href="img/svg-sprite.svg#header-logo-tablet"></use>
+            <use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
           <svg class="page-header__logo-image page-header__logo-image--desktop"width="146px" height="40px">
-            <use xlink:href="img/svg-sprite.svg#header-logo-tablet"></use>
+            <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
         <button type="button" class="page-header__toggle-button page-header__toggle-button--close page-header__toggle-button--nojs">
           <svg class="page-header__toggle-icon page-header__toggle-icon--open" width="23px" height="23px">
-            <use xlink:href="img/svg-sprite.svg#menu-cross"></use>
+            <use xlink:href="#icon-menu-cross"></use>
           </svg>
           <svg class="page-header__toggle-icon page-header__toggle-icon--close" width="49px" height="24px">
-            <use xlink:href="img/svg-sprite.svg#menu-burger"></use>
+            <use xlink:href="#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
@@ -83,7 +87,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 215</span>
@@ -110,7 +114,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 666</span>
@@ -137,7 +141,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 666</span>
@@ -164,7 +168,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 215</span>
@@ -191,7 +195,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 4</span>
@@ -218,7 +222,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 150</span>
@@ -245,7 +249,7 @@
               <div class="photos__like like">
                 <button type="button" class="like__button">
                   <svg class="like__button-icon" width="14px" height="14px">
-                    <use xlink:href="img/svg-sprite.svg#heard"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </button>
                 <span class="like__counter">Нравится: 2560</span>
@@ -274,7 +278,7 @@
               <li class="upload__label-item upload__label-item--active">
                 <label class="upload__label">
                   <svg class="upload__icon upload__icon--active" width="42px" height="42px">
-                    <use xlink:href="img/svg-sprite.svg#cut"></use>
+                    <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                   <input type="range" name="cut" class="input__range" min="0" max="10" value="5">
                   <div class="upload__input input__track-imitation">
@@ -285,7 +289,7 @@
               <li class="upload__label-item">
                 <label class="upload__label upload__label--fill">
                   <svg class="upload__icon" x="0px" y="0px" width="42px" height="42px">
-                    <use xlink:href="img/svg-sprite.svg#fill"></use>
+                    <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                   <input type="range" name="fill" class="input__range">
                   <div class="upload__input input__track-imitation">
@@ -296,7 +300,7 @@
               <li class="upload__label-item">
                 <label class="upload__label upload__label--contrast">
                   <svg class="upload__icon upload__icon--contrast" width="32px" height="32px">
-                    <use xlink:href="img/svg-sprite.svg#contrast"></use>
+                    <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                   <input type="range" name="contrast" class="input__range">
                   <div class="upload__input input__track-imitation">
@@ -315,31 +319,31 @@
 
     </main>
 
-    <footer class="page-footer page-footer--photo-page wrapper">
+    <footer class="page-footer wrapper">
       <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-image" width="146px" height="40px">
-          <use xlink:href="img/svg-sprite.svg#footer-logo"></use>
+          <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__icon" href="https://twitter.com/?lang=ru">
             <svg width="17px" height="14px">
-              <use xlink:href="img/svg-sprite.svg#twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__icon" href="https://www.facebook.com">
             <svg width="8px" height="18px">
-              <use xlink:href="img/svg-sprite.svg#facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__icon" href="https://www.youtube.com/?hl=ru&gl=RU">
             <svg width="14px" height="14px">
-              <use xlink:href="img/svg-sprite.svg#youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -348,7 +352,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__logo" width="27" height="34">
-            <use xlink:href="img/svg-sprite.svg#html-academy-logo"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
