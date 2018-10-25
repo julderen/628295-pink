@@ -38,20 +38,28 @@
 }
 
 .input__range {
+  display: none;
+}
+
+.input__track-imitation {
   width: 100%;
+  background: black;
+  height: 2px;
+}
 
-  &::track {
-    width: 100%;
-    background: black;
-    height: 2px;
-  }
+.input__trumb-imitation {
+  position: absolute;
+  top: -6px;
+  left: 190px;
+  padding: 0;
+  border: solid 2px @red;
+  background-color: @gray--light;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  box-shadow: none;
 
-  &::thumb {
-    margin-top: -6px;
-    border: solid 2px @red;
-    background-color: @gray--light;
-    border-radius: 50%;
-    width: 14px;
-    height: 14px;
+  &:active {
+    background-color: @red;
   }
 }

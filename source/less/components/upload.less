@@ -85,9 +85,8 @@
     content: "";
     width: 100vw;
     position: absolute;
-    transform: translateX(calc(-50% + 140px));
+    margin-left: calc(50% - 50vw - 28px);
     bottom: -36px;
-    left: 0;
     height: 2px;
     background-color: @gray;
   }
@@ -178,7 +177,6 @@
   }
 
   .upload__input {
-    background-color: inherit;
     width: 200px;
   }
 
@@ -198,7 +196,7 @@
       width: calc(100% + 20px);
       position: absolute;
       bottom: 0;
-      transform: none;
+      margin: 0;
       height: 2px;
       background-color: @gray;
     }
@@ -226,7 +224,7 @@
 
   .upload__form {
     margin: 0 auto;
-    width: max-content;
+    width: 940px;
   }
 
   .upload__form-wrapper {

@@ -1,8 +1,5 @@
 .prices {
   position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
   padding: 91px 0 45px;
   margin-top: 40px;
   background: @gray--light;
@@ -14,6 +11,7 @@
     width: 100vw;
     height: 0;
     top: 0;
+    left: 0;
     border-bottom: 34px solid @gray--light;
     border-left: 100vw solid transparent;
     background: white;
@@ -21,8 +19,18 @@
   }
 }
 
+.prices__swipe {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
 .prices__list {
-  width: 278px * 3;
+  table-layout: fixed;
+  width: 276px * 3;
   border-collapse: collapse;
   margin-bottom: 38px;
 }
@@ -103,6 +111,10 @@
     &::before {
       border-bottom: 52px solid #f2f2f2;
     }
+  }
+
+  .prices__swipe {
+    width: 100%;
   }
 
   .prices__list {

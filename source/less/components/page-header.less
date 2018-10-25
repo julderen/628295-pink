@@ -1,3 +1,5 @@
+@header-color: fade(black, 40%);
+
 .page-header {
   width: 100%;
   min-width: 320px;
@@ -6,7 +8,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   z-index: 2;
-  background: fade(black, 40%);
+  background: @header-color;
 }
 
 .page-header__logo {
@@ -45,7 +47,7 @@
   align-items: center;
   padding: 0 20px;
   width: 100%;
-  background: inherit;
+  background: @header-color;
   color: white;
   z-index: 2;
 }
@@ -56,7 +58,7 @@
   flex-shrink: 0;
   border: 0;
   padding: 0;
-  background-color: initial;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
   color: white;
@@ -250,7 +252,7 @@
 
   .page-header__list {
     display: flex;
-    width: inherit;
+    width: @header-color;
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
@@ -263,7 +265,7 @@
     box-shadow: none;
     height: @desktop-header-height;
     display: flex;
-    line-height: inherit;
+    line-height: @header-color;
     align-items: center;
   }
 }
