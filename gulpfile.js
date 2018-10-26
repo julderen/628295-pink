@@ -83,13 +83,14 @@ gulp.task("build_css", function () {
     ]))
     .pipe(csso())
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
-    open: true,
+    open: false,
     cors: true,
     ui: false
   });
