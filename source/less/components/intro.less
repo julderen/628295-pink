@@ -45,8 +45,7 @@
 
 .intro__app {
   width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: calc(50% - 50vw);
 }
 
 @media (min-width: @table-width) {
@@ -73,7 +72,7 @@
 
   .intro__app {
     width: 300px;
-    transform: none;
+    margin: 0;
     left: 0;
     order: -1;
     flex-shrink: 0;
