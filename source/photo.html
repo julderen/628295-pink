@@ -75,7 +75,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img src="img/panorama-mobile@1x.jpg" srcset=" img/panorama-mobile@2x.jpg 2x" class="photos__image photos__image--panorama">
+                <img  alt="Панорама" src="img/panorama-mobile@1x.jpg" srcset=" img/panorama-mobile@2x.jpg 2x" class="photos__image photos__image--panorama">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -103,7 +103,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img src="img/photo-car-mobile@1x.jpg"  srcset=" img/photo-car-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Машина" src="img/photo-car-mobile@1x.jpg"  srcset=" img/photo-car-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -130,7 +130,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img src="img/photo-drumset-mobile@1x.jpg"  srcset=" img/photo-drumset-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Барабаны" src="img/photo-drumset-mobile@1x.jpg"  srcset=" img/photo-drumset-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -157,7 +157,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img src="img/photo-window-mobile@1x.jpg"  srcset=" img/photo-window-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Окно" src="img/photo-window-mobile@1x.jpg"  srcset=" img/photo-window-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -184,7 +184,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img src="img/photo-fair-mobile@1x.jpg"  srcset=" img/photo-fair-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Кубанская бахча" src="img/photo-fair-mobile@1x.jpg"  srcset=" img/photo-fair-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -211,7 +211,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img src="img/photo-pov-mobile@1x.jpg"  srcset=" img/photo-pov-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Гора" src="img/photo-pov-mobile@1x.jpg"  srcset=" img/photo-pov-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -238,7 +238,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img src="img/photo-wing-mobile@1x.jpg"  srcset=" img/photo-wing-mobile@2x.jpg 2x" class="photos__image">
+                <img alt="Крыло самолета" src="img/photo-wing-mobile@1x.jpg"  srcset=" img/photo-wing-mobile@2x.jpg 2x" class="photos__image">
               </picture>
             </a>
             <blockquote class="photos__desc">
@@ -276,37 +276,43 @@
             </picture>
             <ul class="upload__label-list">
               <li class="upload__label-item upload__label-item--active">
-                <label class="upload__label">
-                  <svg class="upload__icon upload__icon--active" width="42px" height="42px">
-                    <use xlink:href="#icon-editor-crop"></use>
-                  </svg>
-                  <input type="range" name="cut" class="input__range" min="0" max="10" value="5">
+                <div class="upload__label">
+                  <label>
+                    <svg class="upload__icon upload__icon--active" width="42px" height="42px">
+                      <use xlink:href="#icon-editor-crop"></use>
+                    </svg>
+                    <input type="range" name="cut" class="input__range" min="0" max="10" value="5">
+                  </label>
                   <div class="upload__input input__track-imitation">
                     <button title="button" class="input__trumb-imitation"></button>
                   </div>
-                </label>
+                </div>
               </li>
               <li class="upload__label-item">
-                <label class="upload__label upload__label--fill">
-                  <svg class="upload__icon" x="0px" y="0px" width="42px" height="42px">
-                    <use xlink:href="#icon-editor-fill"></use>
-                  </svg>
-                  <input type="range" name="fill" class="input__range">
+                <div class="upload__label upload__label--fill">
+                  <label>
+                    <svg class="upload__icon" x="0px" y="0px" width="42px" height="42px">
+                      <use xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                    <input type="range" name="fill" class="input__range">
+                  </label>
                   <div class="upload__input input__track-imitation">
                     <button title="button" class="input__trumb-imitation"></button>
                   </div>
-                </label>
+                </div>
               </li>
               <li class="upload__label-item">
-                <label class="upload__label upload__label--contrast">
-                  <svg class="upload__icon upload__icon--contrast" width="32px" height="32px">
-                    <use xlink:href="#icon-editor-contrast"></use>
-                  </svg>
-                  <input type="range" name="contrast" class="input__range">
+                <div class="upload__label upload__label--contrast">
+                  <label>
+                    <svg class="upload__icon upload__icon--contrast" width="32px" height="32px">
+                      <use xlink:href="#icon-editor-contrast"></use>
+                    </svg>
+                    <input type="range" name="contrast" class="input__range">
+                  </label>
                   <div class="upload__input input__track-imitation">
                     <button title="button" class="input__trumb-imitation"></button>
                   </div>
-                </label>
+                </div>
               </li>
             </ul>
             <div class="upload__button-wrapper">
