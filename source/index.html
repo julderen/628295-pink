@@ -8,24 +8,28 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
 
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
+      <div class="page-header__logo-wrapper page-header__logo-wrapper--nojs">
         <svg class="page-header__logo-image page-header__logo-image--mobile" height="22px" width="74px">
-          <use xlink:href="img/svg-sprite.svg#header-logo-mobile"></use>
+          <use xlink:href="#logo-pink-white-mobile"></use>
         </svg>
         <svg class="page-header__logo-image page-header__logo-image--table" width="146px" height="40px">
-          <use xlink:href="img/svg-sprite.svg#header-logo-tablet"></use>
+          <use xlink:href="#logo-pink-white-tablet"></use>
         </svg>
         <svg class="page-header__logo-image page-header__logo-image--desktop" width="146px" height="40px">
-          <use xlink:href="img/svg-sprite.svg#header-logo-tablet"></use>
+          <use xlink:href="#logo-pink-white-desktop"></use>
         </svg>
-        <button type="button" class="page-header__toggle-button page-header__toggle-button--close page-header__toggle-button--nojs">
+        <button type="button" class="page-header__toggle-button page-header__toggle-button--close">
           <svg class="page-header__toggle-icon page-header__toggle-icon--open" width="23px" height="23px">
-            <use xlink:href="img/svg-sprite.svg#menu-cross"></use>
+            <use xlink:href="#icon-menu-cross"></use>
           </svg>
           <svg class="page-header__toggle-icon page-header__toggle-icon--close" width="49px" height="24px">
-            <use xlink:href="img/svg-sprite.svg#menu-burger"></use>
+            <use xlink:href="#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
@@ -69,21 +73,21 @@
               <li class="app__item">
                 <a href="https://www.apple.com/ru/ios/app-store/" class="app__icon">
                   <svg width="46px" height="56px">
-                    <use xlink:href="img/svg-sprite.svg#apple"></use>
+                    <use xlink:href="#logo-apple"></use>
                   </svg>
                 </a>
               </li>
               <li class="app__item">
                 <a href="https://play.google.com/store/apps?hl=ru" class="app__icon">
-                  <svg class="app__icon-svg app__icon-svg--android" width="45px" height="65px">
-                    <use xlink:href="img/svg-sprite.svg#android"></use>
+                  <svg class="app__icon-svg" width="45px" height="47px">
+                    <use xlink:href="#logo-android"></use>
                   </svg>
                 </a>
               </li>
               <li class="app__item">
                 <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" class="app__icon">
-                  <svg width="43px" height="66px">
-                    <use xlink:href="img/svg-sprite.svg#microsoft"></use>
+                  <svg width="43px" height="43px">
+                    <use xlink:href="#logo-microsoft"></use>
                   </svg>
                 </a>
               </li>
@@ -94,24 +98,24 @@
       </section>
 
       <section class="features">
-        <h1 class="features__title">Устали от серости мегаполиса?</h1>
-        <h1 class="features__title">Нам есть, что вам<br>предложить!</h1>
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам<br>предложить!</h2>
         <div class="features__list-wrapper">
           <ul class="features__list wrapper">
             <li class="features__item">
-              <h2 class="features__subtitle">Поднимает настроение</h2>
+              <h3 class="features__subtitle">Поднимает настроение</h3>
               <p class="features__desc">
-                Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
             <li class="features__item">
-              <h2 class="features__subtitle">Меняет мир вокруг</h2>
+              <h3 class="features__subtitle">Меняет мир вокруг</h3>
               <p class="features__desc">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
               </p>
             </li>
             <li class="features__item">
-              <h2 class="features__subtitle">Заводит новых друзей</h2>
+              <h3 class="features__subtitle">Заводит новых друзей</h3>
               <p class="features__desc">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
@@ -122,16 +126,16 @@
           <div class="research__wrapper wrapper">
             <div class="research__image-wrapper">
               <svg class="research__image" width="298px" height="345px">
-                <use xlink:href="img/svg-sprite.svg#timer"></use>
+                <use xlink:href="#icon-timer"></use>
               </svg>
             </div>
             <div class="research__desc-wrapper">
-              <h1 class="research__title">Эффект<br>на 24 часа!</h1>
+              <h3 class="research__title">Эффект<br>на 24 часа!</h3>
               <div class="research__desc">
                 Британские ученые провели исследования
-                и доказали, что положительный эффект
-                от использования приложения длится
-                целые сутки!
+                и&nbsp;доказали, что&nbsp;положительный эффект
+                от&nbsp;использования приложения длится
+                целые&nbsp;сутки!
               </div>
               <a class="research__link">Узнать больше об исследовании</a>
             </div>
@@ -141,12 +145,12 @@
 
       <section class="comments wrapper">
         <svg class="comments__quotes" width="78px" height="63px">
-          <use xlink:href="img/svg-sprite.svg#quotes"></use>
+          <use xlink:href="#icon-quotes"></use>
         </svg>
         <div class="slider">
           <button type="button" class="slider__toggle-arrow">
             <svg class="slider__arrow" width="22px" height="42px">
-              <use xlink:href="img/svg-sprite.svg#left-arrow"></use>
+              <use xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
           <ul class="comments__list slider__list">
@@ -165,7 +169,7 @@
           </ul>
           <button type="button" class="slider__toggle-arrow">
             <svg class="slider__arrow" width="22px" height="42px">
-              <use xlink:href="img/svg-sprite.svg#right-arrow"></use>
+              <use xlink:href="#icon-review-arrow-right"></use>
             </svg>
           </button>
           <div class="slider__toggles">
@@ -203,7 +207,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -211,7 +215,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -219,7 +223,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Розовый фильтр</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -232,7 +236,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
                   <svg class="prices__status prices__status--no" width="27px" height="27px">
-                    <use xlink:href="img/svg-sprite.svg#no"></use>
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
@@ -240,7 +244,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -248,7 +252,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Смайлики</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -261,7 +265,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
                   <svg class="prices__status prices__status--no" width="27px" height="27px">
-                    <use xlink:href="img/svg-sprite.svg#no"></use>
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
@@ -269,7 +273,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
                   <svg class="prices__status prices__status--no" width="27px" height="27px">
-                    <use xlink:href="img/svg-sprite.svg#no"></use>
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
@@ -277,7 +281,7 @@
                 <div class="prices__feature-wrapper">
                   <span class="prices__feature-name">Комментарии</span>
                   <svg class="prices__status prices__status--yes" width="22px" height="16px">
-                    <use xlink:href="img/svg-sprite.svg#yes"></use>
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -295,18 +299,18 @@
 
     <footer class="home-footer">
       <div class="wrapper">
-        <h1 class="home-footer__title">Остались воросы?<br>Свяжитесь с нами?</h1>
+        <h2 class="home-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="home-footer__contacts-wrapper">
           <address class="home-footer__contacts">
-            <h2 class="home-footer__subtitle">Звоните:</h2>
-            <a class="home-footer__link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+            <span class="home-footer__subtitle">Звоните:</span>
+            <a class="home-footer__link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
           </address>
           <address class="home-footer__contacts home-footer__contacts--mail">
-            <h2 class="home-footer__subtitle">Пишите:</h2>
+            <span class="home-footer__subtitle">Пишите:</span>
             <a class="home-footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </address>
           <address class="home-footer__contacts">
-            <h2 class="home-footer__subtitle">Приезжайте в гости:</h2>
+            <span class="home-footer__subtitle">Приезжайте в гости:</span>
             ул. Большая<br>Конюшенная, 19/8
           </address>
         </div>
@@ -314,28 +318,31 @@
       <div id="map" class="home-footer__map">
       </div>
       <div class="page-footer wrapper">
-        <svg class="page-footer__logo-image" width="146px" height="40px">
-          <use xlink:href="img/svg-sprite.svg#footer-logo"></use>
+        <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="146px" height="40px">
+          <use xlink:href="#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="page-footer__logo-image page-footer__logo-image--desktop" width="146px" height="40px">
+          <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
             <a class="socials__icon" href="https://twitter.com/?lang=ru">
               <svg width="17px" height="14px">
-                <use xlink:href="img/svg-sprite.svg#twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__icon" href="https://www.facebook.com">
               <svg width="8px" height="18px">
-                <use xlink:href="img/svg-sprite.svg#facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__icon" href="https://www.youtube.com/?hl=ru&gl=RU">
               <svg width="14px" height="14px">
-                <use xlink:href="img/svg-sprite.svg#youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -344,7 +351,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru">
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/svg-sprite.svg#html-academy-logo"></use>
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </div>

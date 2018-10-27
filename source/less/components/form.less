@@ -1,5 +1,5 @@
 .form {
-  padding: 44px 0 16px;
+  padding: 44px 0 55px;
   margin: 0 auto;
   position: relative;
 }
@@ -40,12 +40,17 @@
   }
 }
 
-.form__legend {
-  display: block;
+.form__legend-wrapper {
+  display: flex;
+  justify-content: center;
   margin: 0 26px 37px;
+}
+
+.form__legend {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
+  margin: 0;
   text-align: center;
   color: @red;
   text-transform: uppercase;
@@ -57,7 +62,7 @@
   margin: 0;
 }
 
-.form__legend--no-display-tablet-down {
+.form__legend-wrapper--no-display-tablet-down {
   display: none;
 }
 
@@ -107,10 +112,12 @@
     display: contents;
   }
 
-  .form__legend {
-    width: max-content;
+
+  .form__legend-wrapper {
     margin: -10px auto 44px;
-    max-width: max-content;
+  }
+
+  .form__legend {
     padding: 0 32px;
     background: white;
   }
@@ -129,8 +136,8 @@
     }
   }
 
-  .form__legend--no-display-tablet-down {
-    display: block;
+  .form__legend-wrapper--no-display-tablet-down {
+    display: flex;
     margin: -10px auto 38px;
   }
 
@@ -181,7 +188,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0 0 50px;
+    padding: 3px 0 50px;
     align-items: baseline;
 
     .button {
@@ -201,8 +208,12 @@
     margin-bottom: 80px;
   }
 
+  .form__legend-wrapper {
+    margin: -10px auto 42px;
+  }
+
   .form__legend {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .form__set {
@@ -211,7 +222,7 @@
   }
 
   .form__person-info {
-    width: 374px;
+    width: 380px;
     padding: 0;
     margin: 4px 35px 14px 0;
 
@@ -235,6 +246,10 @@
     width: 100%;
     padding-bottom: 15px;
 
+    .form__legend-wrapper {
+      margin-bottom: 35px;
+    }
+
     .label {
       width: 50%;
     }
@@ -247,6 +262,10 @@
 
   .form__set--emotions {
     width: 100%;
+
+    .form__legend-wrapper {
+      margin-bottom: 36px;
+    }
   }
 
   .form__achievements-wrapper {
