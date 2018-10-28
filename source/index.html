@@ -45,7 +45,7 @@
             <a class="page-header__link" href="form.html">Конкурс</a>
           </li>
           <li class="page-header__item">
-            <a class="page-header__link" href="form.html">HTML Academy</a>
+            <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -53,7 +53,7 @@
 
     <main class="page-main">
 
-      <section class="intro">
+      <section class="intro intro--home">
         <div class="wrapper">
           <div class="intro__image-wrapper">
             <picture>
@@ -68,7 +68,7 @@
           </div>
           <div class="intro__app app">
             <h1 class="app__title">Взгляните на жизнь иначе!</h1>
-            <a href="https://up.htmlacademy.ru" class="app__download-button button">Скачать приложение</a>
+            <a href="https://itunes.apple.com/ru" class="app__download-button button">Скачать приложение</a>
             <ul class="app__list">
               <li class="app__item">
                 <a href="https://www.apple.com/ru/ios/app-store/" class="app__icon">
@@ -154,6 +154,30 @@
             </svg>
           </button>
           <ul class="comments__list slider__list">
+            <li class="slider__item">
+              <blockquote class="comments__item">
+                <cite class="comments__author">
+                  Николай Петров
+                  <small class="comments__author-desc">25 лет, водитель трамвая</small>
+                </cite>
+                <p class="comments__text">
+                  "Это приложение перевернуло мой мир и позволило по-новому взглянуть на правычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+                </p>
+              </blockquote>
+            </li>
+            <li class="slider__item slider__item--active">
+              <blockquote class="comments__item">
+                <cite class="comments__author">
+                  Николай Петров
+                  <small class="comments__author-desc">25 лет, водитель трамвая</small>
+                </cite>
+                <p class="comments__text">
+                  "Это приложение перевернуло мой мир и позволило по-новому взглянуть на правычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+                </p>
+              </blockquote>
+            </li>
             <li class="slider__item">
               <blockquote class="comments__item">
                 <cite class="comments__author">
@@ -348,7 +372,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__logo" width="27" height="34">
               <use xlink:href="#htmlacademy"></use>
@@ -360,6 +384,9 @@
 
     <script src="./js/map.js"></script>
     <script src="./js/menuToggle.js"></script>
-    <script src="./js/svgxuse.min.js"></script>
+    <script src="./js/object-fit-images.js"></script>
+    <script>
+      objectFitImages();
+    </script>
   </body>
 </html>

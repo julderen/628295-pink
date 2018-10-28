@@ -1,12 +1,12 @@
 .photos {
-  margin-top: 43px;
+  margin: 45px auto 9px;
 }
 
 .photos__title {
   display: block;
-  margin: 0 auto 50px;
+  margin: 0 auto 49px;
   width: 250px;
-  line-height: 2.14;
+  line-height: 2.15;
   color: @blue;
   font-size: 14px;
   font-weight: 400;
@@ -33,10 +33,13 @@
 
 .photos__image {
   width: 100%;
+  object-fit: cover;
+
+  font-family: "object-fit: cover", sans-serif;
 }
 
 .photos__image--panorama {
-  height: 138px;
+  height: 137px;
   width: 100vw;
   min-width: 320px;
   margin: 0 calc(-50vw + 50%);
@@ -73,7 +76,8 @@
   justify-content: space-between;
   margin: 0;
   flex-grow: 1;
-  padding: 20px 18px 22px;
+  padding: 18px 18px 22px;
+  line-height: 1.72;
   color: @blue;
 }
 
@@ -86,7 +90,7 @@
 
 .photos__text {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   flex-grow: 1;
 }
 
@@ -98,7 +102,7 @@
 
 @media (min-width: @table-width) {
   .photos {
-    margin-top: 91px;
+    margin: 91px auto 0;
   }
 
   .photos__title {
@@ -124,7 +128,7 @@
   .photos__item {
     width: 300px;
     min-height: 455px;
-    margin: 0 0 20px;
+    margin: 0 0 16px;
   }
 
   .photos__desc {
@@ -167,7 +171,7 @@
 
   .photos__link--panorama {
     &::before {
-      top: 58px;
+      top: 59px;
     }
   }
 
@@ -201,6 +205,16 @@
 
   .photos__item--panorama {
     width: 940px;
-    margin: 0 auto 50px;
+    margin: 0 auto 49px;
+  }
+
+  .photos__desc {
+    padding: 23px 30px 24px 27px;
+  }
+
+  .photos__link--panorama {
+    &::before {
+      top: 54px;
+    }
   }
 }
