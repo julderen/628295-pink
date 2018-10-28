@@ -114,7 +114,7 @@
 
 @media (min-width: @table-width) {
   .upload {
-    padding: 45px 0 0;
+    padding: 50px 0 0;
   }
 
   .upload__title {
@@ -226,12 +226,13 @@
 
 @media (min-width: @desktop-width) {
   .upload__title {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   .upload {
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    margin-top: 4px;
   }
 
   .upload__form {
@@ -240,7 +241,8 @@
   }
 
   .upload__form-wrapper {
-    padding: 34px 80px 16px;
+    height: 456px;
+    padding: 36px 80px 18px;
   }
 
   .upload__image {
@@ -284,5 +286,17 @@
 
   .upload__button {
     margin: 0 44px 0 0;
+  }
+
+  .upload__input--crop .input__trumb-imitation {
+    left: 71px;
+  }
+
+  .upload__input--fill .input__trumb-imitation {
+    left: 247px;
+  }
+
+  .upload__input--contrast .input__trumb-imitation {
+    left: 166px;
   }
 }
