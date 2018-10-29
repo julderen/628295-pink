@@ -18,13 +18,18 @@
 .home-footer__map {
   background-image: url("../img/bg-map-mobile@1x.png");
   height: 200px;
+  background-size: cover;
+
+  .retina({
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  })
 }
 
 .home-footer__contacts {
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  color: red;
+  color: @red;
   font-style: normal;
   line-height: normal;
   text-decoration: none;
@@ -37,7 +42,7 @@
 
 .home-footer__link {
   text-decoration: none;
-  color: red;
+  color: @red;
   cursor: pointer;
 }
 
@@ -108,7 +113,12 @@
   }
 
   .home-footer__map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     height: 372px;
+
+    .retina({
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    })
   }
 }
 
@@ -150,7 +160,12 @@
   }
 
   .home-footer__map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     height: 502px;
+
+    .retina({
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    })
   }
 
   .page-footer__socials {
