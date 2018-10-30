@@ -15,13 +15,14 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var rename = require("gulp-rename");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
 
 //Вспомогательные
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
+    "source/img/**"
   ], {
     base: "source"
   })
@@ -56,11 +57,18 @@ gulp.task("optimize_images", function () {
 
 
 //Общие
+gulp.task("build_js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("build_html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -97,12 +105,14 @@ gulp.task("server", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("build_css"));
   gulp.watch("source/img/*.svg", gulp.series("create_svg_sprite", "build_html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("build_js", "refresh"));
   gulp.watch("source/*.html", gulp.series("build_html", "refresh"));
 });
 
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "build_js",
   "build_css",
   "create_svg_sprite",
   "build_html"
