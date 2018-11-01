@@ -264,15 +264,17 @@
         </h2>
         <form class="upload__form">
           <div class="upload__form-wrapper wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x" />
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x" />
-              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x" />
+            <a href="#" class="upload__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x" />
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x" />
 
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img class="upload__image" src="img/photo-road-mobile@1x.jpg"  srcset=" img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
-            </picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="upload__image" src="img/photo-road-mobile@1x.jpg"  srcset=" img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+              </picture>
+            </a>
             <ul class="upload__label-list">
               <li class="upload__label-item upload__label-item--active">
                 <div class="upload__label">

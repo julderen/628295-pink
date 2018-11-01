@@ -5,7 +5,8 @@
 .photos__title {
   display: block;
   margin: 0 auto 49px;
-  width: 250px;
+  width: 78%;
+  min-width: 250px;
   line-height: 2.15;
   color: @blue;
   font-size: 14px;
@@ -126,7 +127,7 @@
   }
 
   .photos__item {
-    width: 300px;
+    width: 48.4%;
     min-height: 455px;
     margin: 0 0 16px;
   }
@@ -181,10 +182,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photos {
-    width: 940px;
-  }
-
   .photos__title {
     width: 580px;
     margin: 0 auto 89px;
@@ -199,8 +196,9 @@
   }
 
   .photos__item {
-    min-height: 556px;
+    width: 32%;
     margin-bottom: 54px;
+    min-height: 555px;
   }
 
   .photos__item--panorama {

@@ -19,9 +19,18 @@
   margin-bottom: 19px;
 }
 
-.upload__image {
+.upload__image-wrapper {
   display: block;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  line-height: 0;
+}
+
+.upload__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  font-family: "object-fit: cover", sans-serif;
 }
 
 .upload__label-list {
@@ -31,8 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 228px;
-  padding: 0 20px;
+  padding: 0 25px;
   margin-bottom: 72px;
   align-items: center;
 }
@@ -63,7 +71,7 @@
 
 .upload__input {
   position: absolute;
-  width: 240px;
+  width: calc(100% - 50px);
   display: none;
 }
 
@@ -77,7 +85,7 @@
 
   .upload__input {
     display: block;
-    left: 20px;
+    left: 25px;
     bottom: 0;
   }
 
@@ -123,10 +131,11 @@
     margin-bottom: 72px;
   }
 
-  .upload__image {
+  .upload__image-wrapper {
     flex-grow: 1;
     margin: 0 47px 0 0;
-    width: 300px;
+    width: 48.4%;
+    height: 400px;
   }
 
   .upload__form {
@@ -151,7 +160,7 @@
   .upload__label-list {
     margin: 0;
     padding: 0;
-    width: 280px;
+    width: 45%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -177,7 +186,7 @@
   }
 
   .upload__input {
-    width: 202px;
+    width: calc(100% - 76px);
   }
 
   .upload__input--crop .input__trumb-imitation {
@@ -196,6 +205,7 @@
     position: relative;
     padding-bottom: 24px;
     margin: 6px 0 18px 0;
+    width: 100%;
 
     .upload__input {
       position: relative;
@@ -205,7 +215,7 @@
 
     &::after {
       content: "";
-      width: calc(100% + 20px);
+      width: 100%;
       position: absolute;
       bottom: 0;
       margin: 0;
@@ -219,7 +229,7 @@
   }
 
   .upload__button-wrapper {
-    width: 260px;
+    width: 42%;
     margin: 0;
   }
 }
@@ -237,20 +247,25 @@
 
   .upload__form {
     margin: 0 auto;
-    width: 940px;
+    width: 78%;
+    min-width: 940px;
   }
 
   .upload__form-wrapper {
     height: 456px;
     padding: 36px 80px 18px;
+    width: 100%;
+    margin: 0;
   }
 
-  .upload__image {
+
+  .upload__image-wrapper {
     margin-right: 0;
+    width: 38.4%;
   }
 
   .upload__label-list {
-    width: 410px;
+    width: 53%;
     margin: 0 60px 0 90px;
   }
 
@@ -271,12 +286,12 @@
   }
 
   .upload__input {
-    width: 290px;
+    width: 70%;
   }
 
   .upload__button-wrapper {
     display: flex;
-    width: 410px;
+    width: 52.6%;
     margin: 0 0 0 90px;
 
     .upload__button:last-child {
